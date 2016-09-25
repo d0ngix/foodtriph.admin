@@ -1,0 +1,1230 @@
+2016-09-25 05:42:15 Error: [Error] Class 'Utilities\UserUtil' not found
+Request URL: /vendors/ajxEditPhoto/57e5fca678337
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 [internal function]: App\Controller\VendorsController->ajxEditPhoto('57e5fca678337')
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2016-09-25 06:01:46 Error: [Error] Call to undefined method App\Model\Entity\Vendor::save()
+Request URL: /vendors/ajxEditPhoto/57e5fca678337
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 [internal function]: App\Controller\VendorsController->ajxEditPhoto('57e5fca678337')
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2016-09-25 06:08:00 Error: [Error] Call to a member function save() on boolean
+Request URL: /vendors/ajxEditPhoto/57e5fca678337
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 [internal function]: App\Controller\VendorsController->ajxEditPhoto('57e5fca678337')
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2016-09-25 06:17:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/vendors57e5fca678337.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:17:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/vendors57e5fca678337.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:24:00 Error: [Error] Class 'Configure' not found
+Request URL: /vendors
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(1012): include()
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(971): Cake\View\View->_evaluate('/Applications/M...', Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(595): Cake\View\View->_render('/Applications/M...')
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-09-25 06:24:52 Error: [Error] Class 'Configure' not found
+Request URL: /vendors
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(1012): include()
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(971): Cake\View\View->_evaluate('/Applications/M...', Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(595): Cake\View\View->_render('/Applications/M...')
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-09-25 06:30:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/img/vendors/57e5fca678337.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/578234a670cbc.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/578234a670cbc.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/img/vendors/57e5fca678337.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:30:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/public/img/vendor/57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:31:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/img/vendors/57e5fca678337.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:33:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:33:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//578234a670cbc.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:33:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//578234a670cbc.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:33:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:33:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:33:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:40:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//578234a670cbc.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:40:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:40:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:40:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:41:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//578234a670cbc.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:43:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:43:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:43:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:43:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:43:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:47:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:47:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:47:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:47:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:48:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:48:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 06:50:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 07:09:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors/view/57821f2df3539
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 08:54:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors/view/57821f2df3539
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 10:19:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors/view/57821f2df3539
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 10:19:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//5cc68750-20ca-11e6-b5fc-d40599f4f904.png
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 10:19:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57821f2df3539.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 10:19:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//57823479cc3f3.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2016-09-25 10:19:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /public/img/vendor//578234a670cbc.jpg
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+

@@ -1,9 +1,7 @@
 <?php
 $arrPhoto = json_decode($vendor->photo,true);
-$strImgUrl = $env.$arrPhoto['path'].$arrPhoto['name'];
-if ( empty($arrPhoto) )
-	$strImgUrl = $default_img;
-
+$imgPathVendor = $default_img;
+if ( !empty($arrPhoto) ) $imgPathVendor = $arrPhoto['path']. DS .$arrPhoto['name'];
 ?>
 <?= $this->Form->create($vendor,['id'=>'frmEditPhoto', 'class'=>"form-horizontal",'type' => 'file']) ?>
 <div class="box box-primary">
@@ -11,7 +9,7 @@ if ( empty($arrPhoto) )
               
 		<div class="row">
 			<div class="col-md-4">
-				<img class="img-responsive" alt="Vendor Image" src="<?=$strImgUrl?>">								
+				<img class="img-responsive" alt="Vendor Image" src="<?=$imgPathVendor?>">								
 			</div>
 			<div class="col-md-8">
 				<div class="form-group">

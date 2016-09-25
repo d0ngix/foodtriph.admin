@@ -28,9 +28,10 @@
 			        	<?php $i=0;?>
 			            <?php foreach ($vendors as $vendor): ?>
 						<?php
-						$strImgUrl = $default_img;
-						$arrPhoto = json_decode($vendor['photo'],true); 
-						if ( !empty($arrPhoto) ) $strImgUrl = $env.$arrPhoto['path'].$arrPhoto['name'];
+						$arrPhoto = json_decode($vendor['photo'],true);
+						$imgPathVendor = $default_img;
+						if ( !empty($arrPhoto) ) $imgPathVendor = $arrPhoto['path']. DS .$arrPhoto['name'];
+						 
 						?>			            
 			            <tr>
 			                <td><?= ++$i; ?></td>
@@ -38,7 +39,7 @@
 								<div class="row">
 									<div class="col-md-4">
 										<a href="#" data-toggle="modal" data-target="#modalEditVendorPhoto" class="vendor-image" id="btnEditVendorPhoto_<?=$i?>" uuid="<?=$vendor->uuid?>">
-											<?=$this->Html->image("$strImgUrl", ['class'=>'img-responsive', "alt" => "Vendor Image"]);?>
+											<img alt="Vendor Image" src="<?=$imgPathVendor?>" class='img-responsive'>
 										</a>									
 									</div>
 									<div class="col-md-8">

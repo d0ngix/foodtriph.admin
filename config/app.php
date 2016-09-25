@@ -242,7 +242,13 @@ return [
             'username' => 'b7bed7fbfec968',
             'password' => '79de4384',
             'host' => 'us-cdbr-iron-east-04.cleardb.net',
-            'database' => 'heroku_9d2a1cfa6f2cfa2',            
+            'database' => 'heroku_9d2a1cfa6f2cfa2', 
+
+            //CLOUD-SQL-173.194.80.224
+			'username' => 'root',
+			'password' => 'd0ngix777',
+			'host' => '173.194.80.224',
+			'database' => 'foodtriph',
             
             /**
              * Set identifier quoting to true if you are using reserved words or

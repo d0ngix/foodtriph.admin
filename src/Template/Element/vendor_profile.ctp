@@ -1,13 +1,12 @@
 <?php 
-$arrPhoto = json_decode($vendor->photo, true);
-$strImgUrl = $env.$arrPhoto['path'].$arrPhoto['name'];
-if ( empty($arrPhoto) )
-	$strImgUrl = $default_img;
+$arrPhoto = json_decode($vendor->photo,true);
+$imgPathVendor = $default_img;
+if ( !empty($arrPhoto) ) $imgPathVendor = $arrPhoto['path']. DS .$arrPhoto['name'];
 ?>
 <!-- Profile Image -->
           <div class="box box-primary">
             <div class="box-body box-profile">
-              <img class="img-responsive" alt="Vendor Image" src="<?=$strImgUrl?>">
+              <img class="img-responsive" alt="Vendor Image" src="<?= DS. $imgPathVendor?>">
 
               <h3 class="profile-username text-center"><?= $arrFoodType[$vendor->type] .' / '. h($vendor->cuisine); ?></h3>
 
