@@ -2,38 +2,70 @@
 $this->assign('title', h($vendor->name));
 $this->assign('sub_title', h($vendor->uuid));
 ?>
-<div class="box">
-<div class="row">
 
+<div class="row">
+	
     <!-- Content Header (Page header) -->
     
-    <!-- Main content -->
-    <section class="content">
-
-      <div class="row">
-        <div class="col-md-3">
-
-			<?= $this->element('vendor_profile');?>
-
-        </div>
-        <!-- /.col -->
-        
-        <div class="col-md-9">
+	    <!-- Main content -->
+		<section class="content">
+	
 			<div class="row">
-				<?= $this->element('orders_new') ?>
-				<?= $this->element('orders_pending') ?>
-				<?= $this->element('orders_completed') ?>
-				<?= $this->element('orders_total') ?>
-			</div>        
-        </div>
-        
-      </div>
-      <!-- /.row -->
+	        	<div class="col-md-3">
+					<?= $this->element('vendor_profile');?>
+		        </div>
+	        
+				<div class="col-md-9">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="box box-primary">
+		        	    		<div class="box-body with-border">
+									<?= $this->element('orders_new') ?>
+									<?= $this->element('orders_pending') ?>
+									<?= $this->element('orders_completed') ?>
+									<?= $this->element('orders_total') ?>	            		
+			            		</div>
+			            	</div>									
+						</div>	
+					</div>
 
-    </section>
-    <!-- /.content -->
+					<div class="row">
+					
+						<div class="col-md-12">
+							<div class="nav-tabs-custom">
+            					<ul class="nav nav-tabs">
+              						<li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Branch</a></li>
+              						<li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Menu</a></li>
+            					</ul>
+            					<div class="tab-content">
+              						<div class="tab-pane active" id="tab_1">
+              							<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Branch</button></div>
+										<?= $this->element('vendor_addresses') ?>              
+                					</div>
+              
+              						<div class="tab-pane" id="tab_2">
+              							<div class="row">
+              								<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Menu</button></div>
+              							</div>              							
+										<?= $this->element('vendor_menus') ?>
+									</div>
+              
+				
+            					</div>
+          					</div>						
+						
+						</div>
+					</div>
+				       
+	        	</div>	        
+	        
+	      </div>
+	      <!-- /.row -->
+	
+	    </section>
+	    <!-- /.content -->
 </div>
-</div>
+
 
 <div class="vendors view large-9 medium-8 columns content">
     
@@ -124,57 +156,7 @@ $this->assign('sub_title', h($vendor->uuid));
         </table>
         <?php endif; ?>
     </div>
-    <div class="related">
-        <h4><?= __('Related Menus') ?></h4>
-        <?php if (!empty($vendor->menus)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Ref') ?></th>
-                <th scope="col"><?= __('Vendor Id') ?></th>
-                <th scope="col"><?= __('Name') ?></th>
-                <th scope="col"><?= __('Description Long') ?></th>
-                <th scope="col"><?= __('Description Short') ?></th>
-                <th scope="col"><?= __('Price') ?></th>
-                <th scope="col"><?= __('Discount') ?></th>
-                <th scope="col"><?= __('Add Ons') ?></th>
-                <th scope="col"><?= __('Pax Min') ?></th>
-                <th scope="col"><?= __('Pax Max') ?></th>
-                <th scope="col"><?= __('Active') ?></th>
-                <th scope="col"><?= __('Deleted') ?></th>
-                <th scope="col"><?= __('Likes') ?></th>
-                <th scope="col"><?= __('Created') ?></th>
-                <th scope="col"><?= __('Modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($vendor->menus as $menus): ?>
-            <tr>
-                <td><?= h($menus->id) ?></td>
-                <td><?= h($menus->ref) ?></td>
-                <td><?= h($menus->vendor_id) ?></td>
-                <td><?= h($menus->name) ?></td>
-                <td><?= h($menus->description_long) ?></td>
-                <td><?= h($menus->description_short) ?></td>
-                <td><?= h($menus->price) ?></td>
-                <td><?= h($menus->discount) ?></td>
-                <td><?= h($menus->add_ons) ?></td>
-                <td><?= h($menus->pax_min) ?></td>
-                <td><?= h($menus->pax_max) ?></td>
-                <td><?= h($menus->active) ?></td>
-                <td><?= h($menus->deleted) ?></td>
-                <td><?= h($menus->likes) ?></td>
-                <td><?= h($menus->created) ?></td>
-                <td><?= h($menus->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Menus', 'action' => 'view', $menus->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Menus', 'action' => 'edit', $menus->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Menus', 'action' => 'delete', $menus->id], ['confirm' => __('Are you sure you want to delete # {0}?', $menus->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-        <?php endif; ?>
-    </div>
+    
     <div class="related">
         <h4><?= __('Related Transaction Messages') ?></h4>
         <?php if (!empty($vendor->transaction_messages)): ?>

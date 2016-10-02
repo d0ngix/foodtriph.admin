@@ -35,14 +35,14 @@ class VendorsController extends AppController
      */
     public function view($uuid = null)
     {
-//         $vendor = $this->Vendors->get($uuid, [
-//             'contain' => ['MenuAddOns', 'MenuCategories', 'Menus', 'TransactionMessages', 'TransactionPromos', 'Transactions', 'VendorAddresses']
-//         ]);
         
         $vendor = $this->Vendors->find('all')
         						->where(['Vendors.uuid'=>$uuid])
         						->contain(['MenuAddOns', 'MenuCategories', 'Menus', 'TransactionMessages', 'TransactionPromos', 'Transactions', 'VendorAddresses']);
         $vendor = $vendor->first();
+        
+//         foreach ($vendor->menus as $v) $arrMenuId[] = $v['id']; 
+//         debug(implode(',', $arrMenuId));die;
         
         $this->set('vendor', $vendor);
         $this->set('_serialize', ['vendor']);
@@ -73,7 +73,7 @@ class VendorsController extends AppController
         $this->set('_serialize', ['vendor']);
         
         if ($this->request->is('Ajax'))
-        	$this->render('ajx_add','ajax');        
+        	$this->render('add','ajax');        
     }
     
     /**
@@ -85,9 +85,7 @@ class VendorsController extends AppController
      */
     public function edit($uuid = null)
     {
-//         $vendor = $this->Vendors->get($id, [
-//             'contain' => []
-//         ]);
+
     	$vendor = $this->Vendors->find('all')
     							->where(['Vendors.uuid'=>$uuid])
     							->contain(['MenuAddOns', 'MenuCategories', 'Menus', 'TransactionMessages', 'TransactionPromos', 'Transactions', 'VendorAddresses']);
@@ -181,7 +179,7 @@ class VendorsController extends AppController
     		
     		if ($this->Vendors->save($vendor)) {
 
-    			$filePath = $imgPath . $vendor->uuid . "." . $file->getExtension();
+    			$filePath = $imgPath . DS . $vendor->uuid . "." . $file->getExtension();
     			if(file_exists($filePath))
     				unlink($filePath);
 

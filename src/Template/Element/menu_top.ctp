@@ -264,16 +264,4 @@
     </nav>
   </header>
 
-<?= $this->element('modals',  ['id'=>'modalNewVendor','modalTitle'=>'New Vendor','modalBody'=>'TEST!@#'])?>  
-<script>
-$("#btnNewVendor").click(function(e){
-	e.preventDefault();
-    $.ajax({
-        url: "/vendors/add", 
-        success: function(result){
-        	$("#modalNewVendor .modal-body").html(result);
-    	}
-	});
-	
-});
-</script>
+<?= $this->element('modals',  ['id'=>'modalNewVendor','modalTitle'=>'New Vendor'])?>  

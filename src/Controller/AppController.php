@@ -50,6 +50,7 @@ class AppController extends Controller
         $this->set('arrFoodType', Configure::read('FoodType'));
         $this->set('env', Configure::read('env'));
         $this->set('default_img', Configure::read('default_img'));
+        $this->set('defaultCurrencySymbol', Configure::read('defaultCurrencySymbol'));
     }
 
     /**

@@ -49,7 +49,7 @@ class MenusController extends AppController
      *
      * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($vendorId)
     {
         $menu = $this->Menus->newEntity();
         if ($this->request->is('post')) {
@@ -64,7 +64,11 @@ class MenusController extends AppController
         }
         $vendors = $this->Menus->Vendors->find('list', ['limit' => 200]);
         $this->set(compact('menu', 'vendors'));
+        $this->set('intVendorId', $vendorId);
         $this->set('_serialize', ['menu']);
+        
+        if ($this->request->is('Ajax'))
+        	$this->render('add','ajax');
     }
 
     /**

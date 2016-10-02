@@ -15,8 +15,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="vendors"><i class="fa fa-circle-o"></i> Vendor Listings</a></li>
-            <li><a href="vendors/add"><i class="fa fa-circle-o"></i> New Vendor</a></li>
+            <li class="active"><a href="/vendors"><i class="fa fa-circle-o"></i> Vendor Listings</a></li>
+            <li><a href="/vendors/add"><i class="fa fa-circle-o"></i> New Vendor</a></li>
           </ul>
         </li>        
       </ul>

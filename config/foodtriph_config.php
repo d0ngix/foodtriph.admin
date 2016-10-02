@@ -15,4 +15,7 @@ return [
     
 	//default image
 	'default_img' => "https://placeholdit.imgix.net/~text?txtsize=75&txt={{img}}&w=600&h=450",//"img/logo_foodtriph.png",
+	
+	//curreny symbol
+	'defaultCurrencySymbol' => 'PHP',
 ];

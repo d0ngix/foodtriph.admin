@@ -66,7 +66,8 @@
 			                 -->
 			                <td class="actions">
 			                    <?= $this->Html->link(__('View'), ['action' => 'view', $vendor->uuid],['class'=>'label label-info']) ?>
-			                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendor->uuid],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendor", 'id'=>"btnEditVendor"] ) ?> 
+			                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendor->uuid],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendor", 'id'=>"btnEditVendor",'uuid'=>$vendor->uuid] ) ?>
+			                    
 			                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $vendor->uuid], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $vendor->name)]) ?>
 			                </td>
 			            </tr>
@@ -91,33 +92,6 @@
 
 <?= $this->element('modals',  ['id'=>'modalEditVendor','modalTitle'=>'Edit Vendor'])?>
 <?= $this->element('modals',  ['id'=>'modalEditVendorPhoto','modalTitle'=>'Update Photo'])?>
-<script>
-						
-$(".vendor-image").click(function(e){
-	e.preventDefault();
-	obj = $(this);
-	uuid = obj.attr('uuid');
-    $.ajax({
-        url: "/vendors/ajxEditPhoto/" + uuid, 
-        success: function(result){
-            
-        	$("#modalEditVendorPhoto .modal-body").html(result);
-    	}
-	});
-	
-});
-						
-$("#btnEditVendor").click(function(e){
-	e.preventDefault();
-    $.ajax({
-        url: "/vendors/edit", 
-        success: function(result){
-        	$("#modalEditVendor .modal-body").html(result);
-    	}
-	});
-	
-});
-</script>
 
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
