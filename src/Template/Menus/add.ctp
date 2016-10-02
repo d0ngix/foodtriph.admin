@@ -29,6 +29,7 @@
                   			<label for="inputDescShort" class="col-sm-3 control-label">Short Description</label>
                   			<div class="col-sm-9">                    		
                     			<?=  $this->Form->input('description_short',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescShort','required'=>true));?>
+                    			<p class="help-block">Summarize whats with this menu in 100 characters</p>
                   			</div>
                 		</div>                		
                 		
@@ -36,6 +37,7 @@
                   			<label for="inputDescLong" class="col-sm-3 control-label">Long Description</label>
                   			<div class="col-sm-9">                    		
                     			<?=  $this->Form->input('description_long',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescLong','required'=>false));?>
+                    			<p class="help-block">Tell us more about the menu in 500 characters</p>
                   			</div>
                 		</div>
                 		
@@ -84,7 +86,15 @@
                   			<div class="col-sm-9">                    		
                     			<?=  $this->Form->input('pax_max',array('type'=>'nubmer', 'label'=>false,'class'=>"form-control",'id'=>'inputPaxMax','required'=>false));?>
                   			</div>
-                		</div>                		
+                		</div>   
+                		
+						<div class="form-group">
+							<label for="inputPhoto" class="col-sm-3 control-label">Photo</label>
+							<div class="col-sm-9">
+								<?= $this->Form->file('photo',['id'=>'inputPhoto'])?>
+								<p class="help-block">Image size within 600x300 and .JPG or .PNG only</p>
+							</div>
+						</div>                		             		
                 		
               		</div>
               		<!-- /.box-body -->

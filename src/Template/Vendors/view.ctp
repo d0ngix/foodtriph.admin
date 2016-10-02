@@ -36,6 +36,8 @@ $this->assign('sub_title', h($vendor->uuid));
             					<ul class="nav nav-tabs">
               						<li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Branch</a></li>
               						<li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Menu</a></li>
+              						<li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false">Menu Add-ons</a></li>
+              						<li class=""><a href="#tab_4" data-toggle="tab" aria-expanded="false">My Crew</a></li>
             					</ul>
             					<div class="tab-content">
               						<div class="tab-pane active" id="tab_1">
@@ -49,6 +51,19 @@ $this->assign('sub_title', h($vendor->uuid));
               							</div>              							
 										<?= $this->element('vendor_menus') ?>
 									</div>
+									
+              						<div class="tab-pane" id="tab_3">
+              							<div class="row">
+              								<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Menu Add-ons</button></div>
+              							</div>              							
+										
+									</div>
+              						<div class="tab-pane" id="tab_4">
+              							<div class="row">
+              								<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Crew Member</button></div>
+              							</div>              							
+										
+									</div>																		
               
 				
             					</div>
