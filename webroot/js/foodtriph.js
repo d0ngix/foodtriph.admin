@@ -33,7 +33,7 @@ $("#btnEditVendor").click(function(e){
 	});
 	
 });
-//
+
 //$("#btnAddMenu").click(function(e){
 //	e.preventDefault();
 //	obj = $(this);
@@ -45,3 +45,19 @@ $("#btnEditVendor").click(function(e){
 //	});
 //	
 //});
+
+
+/**
+ * Modal Add New Branch
+ */
+$(".btnNewBranch").click(function(e){
+e.preventDefault();
+obj = $(this);
+$.ajax({
+    url: "/vendorAddresses/add/"+obj.attr('vendor-id'), 
+    success: function(result){
+    	$("#modalNewBranch .modal-body").html(result);
+	}
+});
+
+});

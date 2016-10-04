@@ -43,8 +43,9 @@
 										</a>									
 									</div>
 									<div class="col-md-8">
-				                	
-				                		<h3 style="margin-top: 5px;"><?= h($vendor->name) ?></h3>
+				                		<h3 style="margin-top: 5px;">
+											<?= $this->Html->link(__($vendor->name), ['action' => 'view', $vendor->uuid]) ?>				                			
+				                		</h3>
 				                		<?= h($vendor->email) ?><br>
 				                		<?= h($vendor->contact_num) ?><br>
 				                		<?= h('Branches (4)') ?>
@@ -66,8 +67,7 @@
 			                 -->
 			                <td class="actions">
 			                    <?= $this->Html->link(__('View'), ['action' => 'view', $vendor->uuid],['class'=>'label label-info']) ?>
-			                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendor->uuid],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendor", 'id'=>"btnEditVendor",'uuid'=>$vendor->uuid] ) ?>
-			                    
+			                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendor->uuid],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendor", 'id'=>"btnEditVendor",'uuid'=>$vendor->uuid] ) ?>			                    
 			                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $vendor->uuid], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $vendor->name)]) ?>
 			                </td>
 			            </tr>

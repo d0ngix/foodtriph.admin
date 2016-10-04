@@ -41,30 +41,46 @@ $this->assign('sub_title', h($vendor->uuid));
             					</ul>
             					<div class="tab-content">
               						<div class="tab-pane active" id="tab_1">
-              							<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Branch</button></div>
-										<?= $this->element('vendor_addresses') ?>              
+              							<div class="row">
+              								<div class="pull-right">
+												<button type="button" class="btn bg-olive margin btnNewBranch" data-toggle="modal" data-target="#modalNewBranch" vendor-id=<?=$vendor->id?>>
+										      		<strong>New Branch</strong>
+										      	</button>              									
+              								</div>
+              							</div>              							
+										<?= $this->element('vendor_addresses') ?>
                 					</div>
               
               						<div class="tab-pane" id="tab_2">
               							<div class="row">
-              								<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Menu</button></div>
+              								<div class="pull-right">              								
+												<button type="button" class="btn bg-olive margin btnNewMenu" data-toggle="modal" data-target="#modalNewMenu" id="">
+										      		<strong>Add Menu</strong>
+										      	</button>              								
+              								</div>
               							</div>              							
 										<?= $this->element('vendor_menus') ?>
 									</div>
 									
               						<div class="tab-pane" id="tab_3">
               							<div class="row">
-              								<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Menu Add-ons</button></div>
+              								<div class="pull-right">
+												<button type="button" class="btn bg-olive margin modalNewMenuAddOns" data-toggle="modal" data-target="#modalNewMenuAddOns" id="">
+										      		<strong>Add Menu Add-ons</strong>
+										      	</button>              									
+              								</div>
               							</div>              							
 										
 									</div>
               						<div class="tab-pane" id="tab_4">
               							<div class="row">
-              								<div class="pull-right"><button type="button" class="btn bg-olive margin">Add Crew Member</button></div>
-              							</div>              							
-										
+              								<div class="pull-right">
+												<button type="button" class="btn bg-olive margin modalNewCrew" data-toggle="modal" data-target="#modalNewCrew" id="">
+										      		<strong>Add Crew Member</strong>
+										      	</button>              								
+              								</div>
+              							</div>            																
 									</div>																		
-              
 				
             					</div>
           					</div>						
@@ -80,6 +96,9 @@ $this->assign('sub_title', h($vendor->uuid));
 	    </section>
 	    <!-- /.content -->
 </div>
+<?= $this->element('modals',  ['id'=>'modalNewBranch','modalTitle'=>'New Branch'])?>
+<?= $this->element('modals',  ['id'=>'modalNewMenu','modalTitle'=>'New Menu'])?>
+<?= $this->element('modals',  ['id'=>'modalNewMenuAddOns','modalTitle'=>'New Menu Add-ons'])?>
 
 
 <div class="vendors view large-9 medium-8 columns content">

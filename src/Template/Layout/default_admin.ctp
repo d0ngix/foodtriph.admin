@@ -26,7 +26,7 @@
   <?= $this->Html->css('/vendor/AdminLTE-2.3.6/plugins/iCheck/flat/blue.css')?>
   
   <!-- Morris chart -->
-  <?//=$this->Html->css('/vendor/AdminLTE-2.3.6/plugins/morris/morris.css')?>  
+  <?=$this->Html->css('/vendor/AdminLTE-2.3.6/plugins/morris/morris.css')?>  
   
   <!-- jvectormap -->
   <?= $this->Html->css('/vendor/AdminLTE-2.3.6/plugins/jvectormap/jquery-jvectormap-1.2.2.css')?>  

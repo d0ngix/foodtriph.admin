@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * VendorAddresses Controller
@@ -49,22 +50,27 @@ class VendorAddressesController extends AppController
      *
      * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($vendorId)
     {
+    	
         $vendorAddress = $this->VendorAddresses->newEntity();
         if ($this->request->is('post')) {
             $vendorAddress = $this->VendorAddresses->patchEntity($vendorAddress, $this->request->data);
             if ($this->VendorAddresses->save($vendorAddress)) {
                 $this->Flash->success(__('The vendor address has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller'=>'vendorAddresses', 'action' => 'view']);
             } else {
                 $this->Flash->error(__('The vendor address could not be saved. Please, try again.'));
             }
         }
-        $vendors = $this->VendorAddresses->Vendors->find('list', ['limit' => 200]);
-        $this->set(compact('vendorAddress', 'vendors'));
+        $vendors = $this->VendorAddresses->Vendors->find('all', ['limit' => 200]);
+        $vendor = $this->VendorAddresses->Vendors->get($vendorId);       
+        
+        $this->set(compact('vendorAddress', 'vendors','vendor'));
         $this->set('_serialize', ['vendorAddress']);
+        
+        if($this->request->is('Ajax')) $this->render('add','ajax');
     }
 
     /**

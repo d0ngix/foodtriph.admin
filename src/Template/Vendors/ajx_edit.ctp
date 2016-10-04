@@ -79,7 +79,7 @@
               		<!-- /.box-body -->
 	              <div class="box-footer">
 	                <button type="reset" class="btn btn-default">Reset</button>
-	                <?= $this->Form->button(__('Submit'),['class'=>'btn btn-primary pull-right']) ?>
+	                <?= $this->Form->button(__('Update'),['class'=>'btn btn-primary pull-right']) ?>
 	                <?= $this->Form->end() ?>
 	              </div>
 				<!-- /.box-footer -->
