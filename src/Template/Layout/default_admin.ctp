@@ -118,6 +118,29 @@
 </div>
 <!-- ./wrapper -->
 
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }    
+      #map {
+        height: 100%;
+      }
+    </style>
+   	<div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 1.387927, lng: 103.9036563},
+          zoom: 8
+        });
+      }
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjQUODOKORpG0ny9Pe2Zg4mvP4N9LpQOw&callback=initMap" async defer></script>
+
 <!-- Bootstrap 3.3.6 -->
 <?= $this->Html->script('/vendor/AdminLTE-2.3.6/bootstrap/js/bootstrap.min.js') ?>
 
