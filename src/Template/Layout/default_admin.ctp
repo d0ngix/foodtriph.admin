@@ -119,27 +119,21 @@
 <!-- ./wrapper -->
 
 
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }    
-      #map {
-        height: 100%;
-      }
-    </style>
-   	<div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 1.387927, lng: 103.9036563},
-          zoom: 8
-        });
-      }
-    </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjQUODOKORpG0ny9Pe2Zg4mvP4N9LpQOw&callback=initMap" async defer></script>
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjQUODOKORpG0ny9Pe2Zg4mvP4N9LpQOw&callback=myMap" async defer></script>
 
 <!-- Bootstrap 3.3.6 -->
 <?= $this->Html->script('/vendor/AdminLTE-2.3.6/bootstrap/js/bootstrap.min.js') ?>

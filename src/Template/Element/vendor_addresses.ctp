@@ -1,15 +1,20 @@
-<?php if(!empty($vendor->vendor_addresses)):?>
-<?php foreach ($vendor->vendor_addresses as $vendorAddresses): ?>
+<?php if(!empty($vendor->vendor_addresses)): $counter=0;?>
+<?php foreach ($vendor->vendor_addresses as $vendorAddresses): $counter++; ?>
 
 <div class="row">
 	<div class="col-md-12">
 		<div class="box box-primary">
 			<div class="box-header with-border">
-            	<h3 class="box-title pull-left"><?= h($vendorAddresses->address_name) ?></h3>
+            	<h3 class="box-title pull-left">
+            		<a data-toggle="collapse" data-parent="#accordion_<?=$counter?>" href="#collapse_<?=$counter?>" class="collapsed" aria-expanded="false">
+						<?= h($vendorAddresses->address_name) ?>
+                    </a>            	
+            	</h3>
             </div>
             <!-- /.box-header -->
             		
-			<div class="box-body row ">
+			<div class="box-group" id="accordion_<?=$counter?>">			            		
+			<div id="collapse_<?=$counter?>" class="box-body row panel-collapse collapse <?=($counter === 1) ? 'in':''?>" aria-expanded="false" style="">
 				<div class="col-md-4">
 					<strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 					<hr>
@@ -60,11 +65,12 @@
 	
 				</div>
 			</div>
+			</div>
 			<div class="box-footer">
 				<div class="pull-left">
                     <?= $this->Html->link(__('View'), ['controller'=>'vendor_addresses', 'action' => 'view', $vendorAddresses->id],['class'=>'label label-info']) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendorAddresses->id],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendor", 'id'=>"btnEditVendor"] ) ?> 
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $vendorAddresses->id], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $vendor->name)]) ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendorAddresses->id],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendorAddresss", 'id'=>"btnEditVendorAddress"] ) ?> 
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $vendorAddresses->id], ['class'=>'label label-danger','confirm' => __("Are you sure you want to delete $vendorAddresses->address_name?")]) ?>
 				</div>                   
             	<div class="pull-right">
             		<div class="btn-group">

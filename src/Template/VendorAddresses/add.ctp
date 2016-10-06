@@ -8,8 +8,8 @@
 		    <?= $this->Form->create($vendorAddress,array('class'=>"form-horizontal")) ?>
 		    <?php 
 		    	//Hidden Fields
-		    	echo $this->Form->hidden('vendor_id',['value'=>$vendor->id])
-		    	
+		    	echo $this->Form->hidden('vendor_id',['value'=>$vendor->id]);
+		    	echo $this->Form->hidden('vendor_uuid',['value'=>$vendor->uuid]);
 		    ?>
 					<div class="box-body">
 					
@@ -65,7 +65,8 @@
 						<div class="form-group">                	
 							<label for="inputCountry" class="col-sm-3 control-label">Country</label>					
 							<div class="col-sm-9">
-	                    		<?= $this->Form->input('country', ['label'=>false, 'disabled'=>true, 'type'=>'text', 'class'=>'form-control', 'value'=>'PHILIPPINES']);?>
+	                    		<?= $this->Form->input('country', ['label'=>false, 'disabled'=>true, 'type'=>'text', 'class'=>'form-control', 'value'=>'SINGAPORE']);?>
+	                    		<?= $this->Form->hidden('country',['value'=>'Singapore']); ?> 
 	                  		</div>
                 		</div>                		
 

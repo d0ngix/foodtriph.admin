@@ -52,17 +52,29 @@ class VendorAddressesController extends AppController
      */
     public function add($vendorId)
     {
-    	
         $vendorAddress = $this->VendorAddresses->newEntity();
         if ($this->request->is('post')) {
+        	
             $vendorAddress = $this->VendorAddresses->patchEntity($vendorAddress, $this->request->data);
+            
+            $strAddress = urlencode("$vendorAddress->address1 $vendorAddress->address1 $vendorAddress->street $vendorAddress->city $vendorAddress->state $vendorAddress->country $vendorAddress->post_code") ;
+            //Get lat/long
+            //https://maps.googleapis.com/maps/api/geocode/json?address=122E%20Rivervale%20Drive,%20Sengkang%20Singapore
+            $arrLoc = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=" . $strAddress);
+            $arrLoc = json_decode($arrLoc, true);
+            
+            $vendorAddress->latitude = $arrLoc['results'][0]['geometry']['location']['lat'];
+            $vendorAddress->longitude = $arrLoc['results'][0]['geometry']['location']['lng'];
+            $vendorAddress->place_id = $arrLoc['results'][0]['place_id'];
+            
             if ($this->VendorAddresses->save($vendorAddress)) {
                 $this->Flash->success(__('The vendor address has been saved.'));
 
-                return $this->redirect(['controller'=>'vendorAddresses', 'action' => 'view']);
+                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $this->request->data['vendor_uuid']]);
             } else {
                 $this->Flash->error(__('The vendor address could not be saved. Please, try again.'));
             }
+            
         }
         $vendors = $this->VendorAddresses->Vendors->find('all', ['limit' => 200]);
         $vendor = $this->VendorAddresses->Vendors->get($vendorId);       
