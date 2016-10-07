@@ -21,35 +21,37 @@
                 		</div>
                 		
 						<div class="form-group">                	
-							<label for="inputAddress1" class="col-sm-3 control-label">Address 1</label>					
+							<label for="inputAddress1" class="col-sm-3 control-label">Unit #</label>					
 							<div class="col-sm-9">
 	                    		<?= $this->Form->input('address1', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
+	                    		<p class="help-block">E.g. 17-03 or leave blank if no unit number</p>
 	                  		</div>
                 		</div>
                 		
 						<div class="form-group">                	
-							<label for="inputAddress2" class="col-sm-3 control-label">Address 2</label>					
+							<label for="inputAddress2" class="col-sm-3 control-label">House/Building #</label>					
 							<div class="col-sm-9">
 	                    		<?= $this->Form->input('address2', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
 	                  		</div>
                 		</div>
 
 						<div class="form-group">                	
-							<label for="inputStreet" class="col-sm-3 control-label">Street</label>					
+							<label for="inputStreet" class="col-sm-3 control-label">Street / Avenue / Road Name, Barangay Name</label>					
 							<div class="col-sm-9">
 	                    		<?= $this->Form->input('street', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
+	                    		<p class="help-block">E.g. Chino Roces Ave, Pasong Tamo</p>
 	                  		</div>
                 		</div>
                 		
 						<div class="form-group">                	
-							<label for="inputCity" class="col-sm-3 control-label">City</label>					
+							<label for="inputCity" class="col-sm-3 control-label">City / Municipality</label>					
 							<div class="col-sm-9">
 	                    		<?= $this->Form->input('city', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
 	                  		</div>
                 		</div>                		
 
 						<div class="form-group">                	
-							<label for="inputState" class="col-sm-3 control-label">State</label>					
+							<label for="inputState" class="col-sm-3 control-label">Province</label>					
 							<div class="col-sm-9">
 	                    		<?= $this->Form->input('state', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
 	                  		</div>
@@ -65,8 +67,7 @@
 						<div class="form-group">                	
 							<label for="inputCountry" class="col-sm-3 control-label">Country</label>					
 							<div class="col-sm-9">
-	                    		<?= $this->Form->input('country', ['label'=>false, 'disabled'=>true, 'type'=>'text', 'class'=>'form-control', 'value'=>'SINGAPORE']);?>
-	                    		<?= $this->Form->hidden('country',['value'=>'Singapore']); ?> 
+	                    		<?= $this->Form->select('country',['PHILIPPINES' => 'PHILIPPINES'],['label'=>false, 'type'=>'text', 'class'=>'form-control', 'default'=>'PHILIPPINES']);?> 
 	                  		</div>
                 		</div>                		
 
@@ -77,9 +78,14 @@
 	                  		</div>
                 		</div>
                 		
+            		
+						<hr>
 						<div class="form-group">                	
 							<label for="inputCountry" class="col-sm-3 control-label">Operating Hours</label>					
 							<div class="col-sm-9">
+							
+								<?=$this->element('vendor_operation');?>
+	
 	                    		<?= $this->Form->input('operating_hours', ['label'=>false, 'type'=>'text', 'class'=>'form-control']);?>
 	                  		</div>
                 		</div>                		                		
@@ -93,34 +99,4 @@
 				<!-- /.box-footer -->
           </div>	
 	</div>
-</div>
-
-
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Vendor Addresses'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Vendors'), ['controller' => 'Vendors', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Vendor'), ['controller' => 'Vendors', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="vendorAddresses form large-9 medium-8 columns content">
-    <fieldset>
-    <?= $this->Form->create($vendorAddress) ?>
-        <legend><?= __('Add Vendor Address') ?></legend> 
-        <?php
-            echo $this->Form->input('vendor_id', ['options' => $vendors]);
-            
-            echo $this->Form->input('latitude');
-            echo $this->Form->input('longitude');
-            
-            
-            
-            
-            
-            
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
 </div>

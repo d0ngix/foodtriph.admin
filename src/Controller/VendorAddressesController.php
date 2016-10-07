@@ -57,7 +57,8 @@ class VendorAddressesController extends AppController
         	
             $vendorAddress = $this->VendorAddresses->patchEntity($vendorAddress, $this->request->data);
             
-            $strAddress = urlencode("$vendorAddress->address1 $vendorAddress->address1 $vendorAddress->street $vendorAddress->city $vendorAddress->state $vendorAddress->country $vendorAddress->post_code") ;
+            $strAddress = urlencode("$vendorAddress->address2 $vendorAddress->street $vendorAddress->city $vendorAddress->state $vendorAddress->country $vendorAddress->post_code") ;
+            
             //Get lat/long
             //https://maps.googleapis.com/maps/api/geocode/json?address=122E%20Rivervale%20Drive,%20Sengkang%20Singapore
             $arrLoc = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=" . $strAddress);
@@ -119,12 +120,14 @@ class VendorAddressesController extends AppController
      * @return \Cake\Network\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function delete($id = null)
+    public function delete($id = null, $vendorUuid)
     {
         $this->request->allowMethod(['post', 'delete']);
         $vendorAddress = $this->VendorAddresses->get($id);
-        if ($this->VendorAddresses->delete($vendorAddress)) {
-            $this->Flash->success(__('The vendor address has been deleted.'));
+        $vendorAddress->deleted = 1;
+        if ($this->VendorAddresses->save($vendorAddress)) {
+            $this->Flash->success(__('The vendor address has been deleted.'));            
+            return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid]);
         } else {
             $this->Flash->error(__('The vendor address could not be deleted. Please, try again.'));
         }

@@ -15760,3 +15760,2528 @@ Cake\Http\Server::run() - CORE/src/Http/Server.php, line 92
 
 
 
+2016-10-07 07:21:53 Notice: Notice (8): Undefined variable: {
+    "id": 53,
+    "uuid": "57f315eef1090",
+    "name": "Ila Manang",
+    "email": "d0ngix.mabulay@gmail.com",
+    "contact_num": "+639218587742",
+    "url": "http:\/\/www.ila-manang.com",
+    "photo": "{\"name\":\"57f315eef1090.png\",\"extension\":\"png\",\"mime\":\"image\\\/png\",\"size\":397857,\"md5\":\"749b05b0b06999b2b903b4a5a7e9933e\",\"dimensions\":{\"width\":640,\"height\":360},\"path\":\"img\\\/vendors\"}",
+    "type": "3",
+    "cuisine": "Pinoy",
+    "description": "Ilang Manang is one of the best place where you eat for only P10 with drinks and dessert.",
+    "status": "1",
+    "created": "2016-10-04T02:37:35+00:00",
+    "modified": "2016-10-04T02:42:28+00:00",
+    "vendor_addresses": [
+        {
+            "id": 35,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - Rivervale",
+            "latitude": 1.387927,
+            "longitude": 103.905846,
+            "address1": "122E Rivervale Drive",
+            "address2": "#08-470",
+            "street": "",
+            "city": "Singapore",
+            "state": "",
+            "country": "Singapore",
+            "post_code": "545122",
+            "landmarks": "Blue colored building",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T02:47:32+00:00",
+            "modified": "2016-10-07T02:47:32+00:00"
+        },
+        {
+            "id": 36,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - Rivervale",
+            "latitude": 14.548553,
+            "longitude": 121.014252,
+            "address1": "",
+            "address2": "2214",
+            "street": "Chino Roces Ave",
+            "city": "Makati City",
+            "state": "Metro Manila",
+            "country": "PHILIPPINES",
+            "post_code": "",
+            "landmarks": "",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T03:32:28+00:00",
+            "modified": "2016-10-07T03:32:28+00:00"
+        },
+        {
+            "id": 37,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - (Makati)",
+            "latitude": 14.548553,
+            "longitude": 121.014252,
+            "address1": "17-03",
+            "address2": "2214",
+            "street": "Chino Roces Ave",
+            "city": "Makati City",
+            "state": "Metro Manila",
+            "country": "PHILIPPINES",
+            "post_code": "",
+            "landmarks": "",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T07:05:21+00:00",
+            "modified": "2016-10-07T07:05:21+00:00"
+        }
+    ],
+    "transactions": [],
+    "transaction_promos": [],
+    "transaction_messages": [],
+    "menus": [],
+    "menu_categories": [],
+    "menu_add_ons": []
+} in [C:\wamp64\www\foodtriph.admin\src\Template\Element\vendor_addresses.ctp, line 73]
+Request URL: /vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\vendor_addresses.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 07:21:53 Notice: Notice (8): Trying to get property of non-object in [C:\wamp64\www\foodtriph.admin\src\Template\Element\vendor_addresses.ctp, line 73]
+Request URL: /vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\vendor_addresses.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 07:21:53 Notice: Notice (8): Undefined variable: {
+    "id": 53,
+    "uuid": "57f315eef1090",
+    "name": "Ila Manang",
+    "email": "d0ngix.mabulay@gmail.com",
+    "contact_num": "+639218587742",
+    "url": "http:\/\/www.ila-manang.com",
+    "photo": "{\"name\":\"57f315eef1090.png\",\"extension\":\"png\",\"mime\":\"image\\\/png\",\"size\":397857,\"md5\":\"749b05b0b06999b2b903b4a5a7e9933e\",\"dimensions\":{\"width\":640,\"height\":360},\"path\":\"img\\\/vendors\"}",
+    "type": "3",
+    "cuisine": "Pinoy",
+    "description": "Ilang Manang is one of the best place where you eat for only P10 with drinks and dessert.",
+    "status": "1",
+    "created": "2016-10-04T02:37:35+00:00",
+    "modified": "2016-10-04T02:42:28+00:00",
+    "vendor_addresses": [
+        {
+            "id": 35,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - Rivervale",
+            "latitude": 1.387927,
+            "longitude": 103.905846,
+            "address1": "122E Rivervale Drive",
+            "address2": "#08-470",
+            "street": "",
+            "city": "Singapore",
+            "state": "",
+            "country": "Singapore",
+            "post_code": "545122",
+            "landmarks": "Blue colored building",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T02:47:32+00:00",
+            "modified": "2016-10-07T02:47:32+00:00"
+        },
+        {
+            "id": 36,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - Rivervale",
+            "latitude": 14.548553,
+            "longitude": 121.014252,
+            "address1": "",
+            "address2": "2214",
+            "street": "Chino Roces Ave",
+            "city": "Makati City",
+            "state": "Metro Manila",
+            "country": "PHILIPPINES",
+            "post_code": "",
+            "landmarks": "",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T03:32:28+00:00",
+            "modified": "2016-10-07T03:32:28+00:00"
+        },
+        {
+            "id": 37,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - (Makati)",
+            "latitude": 14.548553,
+            "longitude": 121.014252,
+            "address1": "17-03",
+            "address2": "2214",
+            "street": "Chino Roces Ave",
+            "city": "Makati City",
+            "state": "Metro Manila",
+            "country": "PHILIPPINES",
+            "post_code": "",
+            "landmarks": "",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T07:05:21+00:00",
+            "modified": "2016-10-07T07:05:21+00:00"
+        }
+    ],
+    "transactions": [],
+    "transaction_promos": [],
+    "transaction_messages": [],
+    "menus": [],
+    "menu_categories": [],
+    "menu_add_ons": []
+} in [C:\wamp64\www\foodtriph.admin\src\Template\Element\vendor_addresses.ctp, line 73]
+Request URL: /vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\vendor_addresses.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 07:21:53 Notice: Notice (8): Trying to get property of non-object in [C:\wamp64\www\foodtriph.admin\src\Template\Element\vendor_addresses.ctp, line 73]
+Request URL: /vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\vendor_addresses.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 07:21:53 Notice: Notice (8): Undefined variable: {
+    "id": 53,
+    "uuid": "57f315eef1090",
+    "name": "Ila Manang",
+    "email": "d0ngix.mabulay@gmail.com",
+    "contact_num": "+639218587742",
+    "url": "http:\/\/www.ila-manang.com",
+    "photo": "{\"name\":\"57f315eef1090.png\",\"extension\":\"png\",\"mime\":\"image\\\/png\",\"size\":397857,\"md5\":\"749b05b0b06999b2b903b4a5a7e9933e\",\"dimensions\":{\"width\":640,\"height\":360},\"path\":\"img\\\/vendors\"}",
+    "type": "3",
+    "cuisine": "Pinoy",
+    "description": "Ilang Manang is one of the best place where you eat for only P10 with drinks and dessert.",
+    "status": "1",
+    "created": "2016-10-04T02:37:35+00:00",
+    "modified": "2016-10-04T02:42:28+00:00",
+    "vendor_addresses": [
+        {
+            "id": 35,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - Rivervale",
+            "latitude": 1.387927,
+            "longitude": 103.905846,
+            "address1": "122E Rivervale Drive",
+            "address2": "#08-470",
+            "street": "",
+            "city": "Singapore",
+            "state": "",
+            "country": "Singapore",
+            "post_code": "545122",
+            "landmarks": "Blue colored building",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T02:47:32+00:00",
+            "modified": "2016-10-07T02:47:32+00:00"
+        },
+        {
+            "id": 36,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - Rivervale",
+            "latitude": 14.548553,
+            "longitude": 121.014252,
+            "address1": "",
+            "address2": "2214",
+            "street": "Chino Roces Ave",
+            "city": "Makati City",
+            "state": "Metro Manila",
+            "country": "PHILIPPINES",
+            "post_code": "",
+            "landmarks": "",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T03:32:28+00:00",
+            "modified": "2016-10-07T03:32:28+00:00"
+        },
+        {
+            "id": 37,
+            "uuid": null,
+            "vendor_id": 53,
+            "address_name": "Ila Manang - (Makati)",
+            "latitude": 14.548553,
+            "longitude": 121.014252,
+            "address1": "17-03",
+            "address2": "2214",
+            "street": "Chino Roces Ave",
+            "city": "Makati City",
+            "state": "Metro Manila",
+            "country": "PHILIPPINES",
+            "post_code": "",
+            "landmarks": "",
+            "operating_hours": "",
+            "active": "1",
+            "deleted": null,
+            "created": "2016-10-07T07:05:21+00:00",
+            "modified": "2016-10-07T07:05:21+00:00"
+        }
+    ],
+    "transactions": [],
+    "transaction_promos": [],
+    "transaction_messages": [],
+    "menus": [],
+    "menu_categories": [],
+    "menu_add_ons": []
+} in [C:\wamp64\www\foodtriph.admin\src\Template\Element\vendor_addresses.ctp, line 73]
+Request URL: /vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\vendor_addresses.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 07:21:53 Notice: Notice (8): Trying to get property of non-object in [C:\wamp64\www\foodtriph.admin\src\Template\Element\vendor_addresses.ctp, line 73]
+Request URL: /vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\vendor_addresses.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:04:51 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 4]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:04:51 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 4]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:04:51 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 4]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:04:51 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 4]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:04:51 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 4]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:07:12 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:07:12 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:07:12 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:07:13 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:07:13 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:08:55 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:08:55 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:08:55 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:08:55 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:08:55 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:09:09 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendorAddresses/add/53
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:10:32 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:10:32 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:10:32 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:10:32 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:10:32 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:12:25 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:12:25 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:12:25 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:12:25 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:12:25 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:13:02 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:13:02 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:13:02 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:13:02 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:13:02 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:14:48 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:14:48 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:14:48 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:14:48 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:14:48 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:35 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:35 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:35 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:35 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:35 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:16:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:20:58 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:20:58 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\vendor_profile.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:20:59 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 100
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:20:59 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Vendors\view.ctp, line 101
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::render() - CORE\src\View\View.php, line 595
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:20:59 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendors/view/57f315eef1090
+Referer URL: http://foodtriph.admin/vendors/view/57f315eef1090
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:25:39 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendorAddresses/add/53
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:25:53 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendorAddresses/add/53
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-10-07 11:30:34 Notice: Notice (8): Undefined variable: size in [C:\wamp64\www\foodtriph.admin\src\Template\Element\modals.ctp, line 3]
+Request URL: /vendorAddresses/add/53
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Element\modals.ctp, line 3
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Element\menu_top.ctp, line 267
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1361
+Cake\View\View::element() - CORE\src\View\View.php, line 499
+include - APP/Template\Layout\default_admin.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1012
+Cake\View\View::_render() - CORE\src\View\View.php, line 971
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 642
+Cake\View\View::render() - CORE\src\View\View.php, line 600
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 128
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 96
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 92
+[main] - ROOT\webroot\index.php, line 37
+
+
+

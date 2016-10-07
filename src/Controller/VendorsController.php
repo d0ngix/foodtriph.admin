@@ -37,10 +37,10 @@ class VendorsController extends AppController
     {
         
         $vendor = $this->Vendors->find('all')
-        						->where(['Vendors.uuid'=>$uuid])
+        						->where(['Vendors.uuid'=>$uuid, 'Vendors.status'=>1])
         						->contain(['MenuAddOns', 'MenuCategories', 'Menus', 'TransactionMessages', 'TransactionPromos', 'Transactions', 'VendorAddresses']);
         $vendor = $vendor->first();
-        
+              
 //         foreach ($vendor->menus as $v) $arrMenuId[] = $v['id']; 
 //         debug(implode(',', $arrMenuId));die;
         

@@ -1,5 +1,6 @@
 <?php if(!empty($vendor->vendor_addresses)): $counter=0;?>
 <?php foreach ($vendor->vendor_addresses as $vendorAddresses): $counter++; ?>
+<?php if($vendorAddresses->deleted) continue;?>
 
 <div class="row">
 	<div class="col-md-12">
@@ -14,14 +15,14 @@
             <!-- /.box-header -->
             		
 			<div class="box-group" id="accordion_<?=$counter?>">			            		
-			<div id="collapse_<?=$counter?>" class="box-body row panel-collapse collapse <?=($counter === 1) ? 'in':''?>" aria-expanded="false" style="">
+			<div id="collapse_<?=$counter?>" class="box-body row panel-collapse collapse in" aria-expanded="false" style="">
 				<div class="col-md-4">
 					<strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 					<hr>
 	       			<p class="text-muted">
 	       				<?= empty($vendorAddresses->address1) ? "" : h($vendorAddresses->address1) ?>
 	       				<?= empty($vendorAddresses->address2) ? "" : ", ".h($vendorAddresses->address2) ?>
-	       				<?= empty($vendorAddresses->street) ? "" : "<br>".h($vendorAddresses->street) ?>
+	       				<?= empty($vendorAddresses->street) ? "" : " ".h($vendorAddresses->street) ?>
 	       				<?= empty($vendorAddresses->city) ? "" : "<br>".h($vendorAddresses->city) ?>
 	       				<?= empty($vendorAddresses->state) ? "" : "<br>".h($vendorAddresses->state) ?>
 	       				<?= empty($vendorAddresses->country) ? "" : "<br>".h($vendorAddresses->country) ?>
@@ -70,7 +71,7 @@
 				<div class="pull-left">
                     <?= $this->Html->link(__('View'), ['controller'=>'vendor_addresses', 'action' => 'view', $vendorAddresses->id],['class'=>'label label-info']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendorAddresses->id],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendorAddresss", 'id'=>"btnEditVendorAddress"] ) ?> 
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $vendorAddresses->id], ['class'=>'label label-danger','confirm' => __("Are you sure you want to delete $vendorAddresses->address_name?")]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller'=>'vendorAddresses', 'action' => 'delete', $vendorAddresses->id, $vendor->uuid], ['class'=>'label label-danger','confirm' => __("Are you sure you want to delete $vendorAddresses->address_name?")]) ?>
 				</div>                   
             	<div class="pull-right">
             		<div class="btn-group">

@@ -39,6 +39,9 @@
   
   <!-- bootstrap wysihtml5 - text editor -->
   <?= $this->Html->css('/vendor/AdminLTE-2.3.6/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')?>
+  
+  <!-- bootstrap timepicker -->
+  <?= $this->Html->css('/vendor/AdminLTE-2.3.6/plugins/timepicker/bootstrap-timepicker.min')?>  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,6 +60,9 @@
 	  $.widget.bridge('uibutton', $.ui.button);
 	</script>  
   
+  
+
+	  
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 
@@ -177,12 +183,18 @@ function myMap() {
 <!-- AdminLTE for demo purposes -->
 <?= $this->Html->script('/vendor/AdminLTE-2.3.6/dist/js/demo.js') ?>
 
+<!-- Bootstrap Twitter - Timepicker -->
+<?= $this->Html->script('/vendor/AdminLTE-2.3.6/plugins/timepicker/bootstrap-timepicker.min') ?>
+<script type="text/javascript">$(".timepicker").timepicker({showInputs: false});</script>	
+
 <!-- Select2 -->
+<!-- 
 <?= $this->Html->script('/vendor/AdminLTE-2.3.6/plugins/select2/select2.full.min.js') ?>
 <script type="text/javascript">
   $('select').select2();
 </script>
-
+ -->
+ 
 <!-- FoodTriPH JS -->
 <?= $this->Html->script('/js/foodtriph') ?>
 </body>

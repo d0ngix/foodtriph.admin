@@ -96,7 +96,7 @@ $this->assign('sub_title', h($vendor->uuid));
 	    </section>
 	    <!-- /.content -->
 </div>
-<?= $this->element('modals',  ['id'=>'modalNewBranch','modalTitle'=>'New Branch'])?>
+<?= $this->element('modals',  ['id'=>'modalNewBranch','modalTitle'=>'New Branch','size'=>'modal-lg'])?>
 <?= $this->element('modals',  ['id'=>'modalNewMenu','modalTitle'=>'New Menu'])?>
 <?= $this->element('modals',  ['id'=>'modalNewMenuAddOns','modalTitle'=>'New Menu Add-ons'])?>
 
