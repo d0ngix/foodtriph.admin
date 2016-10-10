@@ -60,7 +60,7 @@ if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
            					'add_on_name'=> $v['category_name'],
 							'items' => @$v['items']
 						]; 
-           				echo $this->Form->hidden('add_ons[]',['value'=>json_encode($arrAddOn)])
+           				echo $this->Form->hidden('add_ons[]',['value'=>$arrAddOn])
            			?>
            				<input type="checkbox" name="menu_add_on_id[]" id="<?=$k?>" value="<?=$k?>" />
            		<?php endif;?>            	
