@@ -55,18 +55,19 @@ class VendorAddressesController extends AppController
         $vendorAddress = $this->VendorAddresses->newEntity();
         if ($this->request->is('post')) {
         	
+        	//Operating hours
+        	if ($this->request->data['op']) {
+        		foreach ($this->request->data['op'] as $k => $v )
+        			$this->request->data['operating_hours'][][$k] = $v;
+        		
+        		$this->request->data['operating_hours'] = json_encode($this->request->data['operating_hours']);
+        	}        	
+        	unset($this->request->data['op']);
+        	
+        	//patchEntity
             $vendorAddress = $this->VendorAddresses->patchEntity($vendorAddress, $this->request->data);
             
-            $strAddress = urlencode("$vendorAddress->address2 $vendorAddress->street $vendorAddress->city $vendorAddress->state $vendorAddress->country $vendorAddress->post_code") ;
-            
-            //Get lat/long
-            //https://maps.googleapis.com/maps/api/geocode/json?address=122E%20Rivervale%20Drive,%20Sengkang%20Singapore
-            $arrLoc = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=" . $strAddress);
-            $arrLoc = json_decode($arrLoc, true);
-            
-            $vendorAddress->latitude = $arrLoc['results'][0]['geometry']['location']['lat'];
-            $vendorAddress->longitude = $arrLoc['results'][0]['geometry']['location']['lng'];
-            $vendorAddress->place_id = $arrLoc['results'][0]['place_id'];
+            $this->getLatLang($vendorAddress);
             
             if ($this->VendorAddresses->save($vendorAddress)) {
                 $this->Flash->success(__('The vendor address has been saved.'));
@@ -78,7 +79,7 @@ class VendorAddressesController extends AppController
             
         }
         $vendors = $this->VendorAddresses->Vendors->find('all', ['limit' => 200]);
-        $vendor = $this->VendorAddresses->Vendors->get($vendorId);       
+        $vendor = $this->VendorAddresses->Vendors->get($vendorId);    
         
         $this->set(compact('vendorAddress', 'vendors','vendor'));
         $this->set('_serialize', ['vendorAddress']);
@@ -93,24 +94,42 @@ class VendorAddressesController extends AppController
      * @return \Cake\Network\Response|void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
+    public function edit($id = null, $vendorUuid)
     {
+    	//debug($vendorUuid);die;
         $vendorAddress = $this->VendorAddresses->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
+        	
+        	//Operating hours
+        	if ($this->request->data['op']) {
+        		foreach ($this->request->data['op'] as $k => $v )
+        			$this->request->data['operating_hours'][][$k] = $v;
+        	
+        		$this->request->data['operating_hours'] = json_encode($this->request->data['operating_hours']);
+        	}
+        	unset($this->request->data['op']);       
+
+        	$this->getLatLang($vendorAddress);
+        	
             $vendorAddress = $this->VendorAddresses->patchEntity($vendorAddress, $this->request->data);
             if ($this->VendorAddresses->save($vendorAddress)) {
                 $this->Flash->success(__('The vendor address has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid]);
             } else {
                 $this->Flash->error(__('The vendor address could not be saved. Please, try again.'));
             }
         }
         $vendors = $this->VendorAddresses->Vendors->find('list', ['limit' => 200]);
-        $this->set(compact('vendorAddress', 'vendors'));
+        $vendor = $this->VendorAddresses->Vendors->find('all')->where(['uuid' => $vendorUuid]);
+        $vendor = $vendor->first();
+        
+        $this->set(compact('vendorAddress', 'vendors','vendor'));
         $this->set('_serialize', ['vendorAddress']);
+        
+        if($this->request->is('Ajax')) $this->render('edit','ajax');
     }
 
     /**
@@ -134,4 +153,22 @@ class VendorAddressesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+	
+    private function getLatLang (&$vendorAddress) {
+    	//Get lat/long
+    	//https://maps.googleapis.com/maps/api/geocode/json?address=122E%20Rivervale%20Drive,%20Sengkang%20Singapore
+    	$strAddress = urlencode("$vendorAddress->address2 $vendorAddress->street $vendorAddress->city $vendorAddress->state $vendorAddress->country $vendorAddress->post_code") ;
+    	$arrLoc = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=" . $strAddress);
+    	$arrLoc = json_decode($arrLoc, true);
+    	
+    	if (!empty($arrLoc['results'])) {
+    		$vendorAddress->latitude = $arrLoc['results'][0]['geometry']['location']['lat'];
+    		$vendorAddress->longitude = $arrLoc['results'][0]['geometry']['location']['lng'];
+    		$vendorAddress->place_id = $arrLoc['results'][0]['place_id'];
+    	}
+
+    	return $vendorAddress;
+    }
+
 }

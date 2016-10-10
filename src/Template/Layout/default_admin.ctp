@@ -124,7 +124,7 @@
 </div>
 <!-- ./wrapper -->
 
-
+<!-- 
 <div id="map" style="width:100%;height:500px"></div>
 
 <script>
@@ -137,9 +137,8 @@ function myMap() {
   var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 </script>
-
-<!-- <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjQUODOKORpG0ny9Pe2Zg4mvP4N9LpQOw&callback=myMap" async defer></script>
+ -->
 
 <!-- Bootstrap 3.3.6 -->
 <?= $this->Html->script('/vendor/AdminLTE-2.3.6/bootstrap/js/bootstrap.min.js') ?>

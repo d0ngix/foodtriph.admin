@@ -229,9 +229,9 @@ return [
              * the following line and set the port accordingly
              */
             'port' => 'non_standard_port_number',
-            'username' => 'root',
-            'password' => 'd0ngix777',
-            'database' => 'foodtriph',
+//             'username' => 'root',
+//             'password' => 'd0ngix777',
+//             'database' => 'foodtriph',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
@@ -245,10 +245,10 @@ return [
 //             'database' => 'heroku_9d2a1cfa6f2cfa2', 
 
             //CLOUD-SQL-173.194.80.224
-// 			'username' => 'root',
-// 			'password' => 'd0ngix777',
-// 			'host' => '173.194.80.224',
-// 			'database' => 'foodtriph',
+			'username' => 'root',
+			'password' => 'd0ngix777',
+			'host' => '173.194.80.224',
+			'database' => 'foodtriph',
             
             /**
              * Set identifier quoting to true if you are using reserved words or

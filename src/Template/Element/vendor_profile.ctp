@@ -26,9 +26,9 @@ if ( !empty($arrPhoto) ) $imgPathVendor = $arrPhoto['path']. DS .$arrPhoto['name
 			</li>
 			<li class="list-group-item">
 				<?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendor->uuid],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendor", 'id'=>"btnEditVendor"] ) ?>
-				<?= $this->Html->link(__('Add Menu'), ['controller'=>'menus', 'action' => 'add',$vendor->id],['class'=>'label label-success', 'data-toggle'=>"modal", 'data-target'=>"#modalAddMenu", 'id'=>"btnAddMenu"] ) ?>
-				<?= $this->Html->link(__('Add Menu Add-ons'), ['controller'=>'menus', 'action' => 'add',$vendor->id],['class'=>'label label-success', 'data-toggle'=>"modal", 'data-target'=>"#modalAddMenu", 'id'=>"btnAddMenu"] ) ?>
-				<?= $this->Html->link(__('Add User'), ['controller'=>'menus', 'action' => 'add',$vendor->id],['class'=>'label label-success', 'data-toggle'=>"modal", 'data-target'=>"#modalAddMenu", 'id'=>"btnAddMenu"] ) ?>				
+				<?//= $this->Html->link(__('Add Menu'), ['controller'=>'menus', 'action' => 'add',$vendor->id],['class'=>'label label-success', 'data-toggle'=>"modal", 'data-target'=>"#modalAddMenu", 'id'=>"btnAddMenu"] ) ?>
+				<?//= $this->Html->link(__('Add Menu Add-ons'), ['controller'=>'menus', 'action' => 'add',$vendor->id],['class'=>'label label-success', 'data-toggle'=>"modal", 'data-target'=>"#modalAddMenu", 'id'=>"btnAddMenu"] ) ?>
+				<?//= $this->Html->link(__('Add User'), ['controller'=>'menus', 'action' => 'add',$vendor->id],['class'=>'label label-success', 'data-toggle'=>"modal", 'data-target'=>"#modalAddMenu", 'id'=>"btnAddMenu"] ) ?>				
 			</li>
 			                
 		</ul>
@@ -41,4 +41,3 @@ if ( !empty($arrPhoto) ) $imgPathVendor = $arrPhoto['path']. DS .$arrPhoto['name
 </div>
 <!-- /.box -->
 <?= $this->element('modals',  ['id'=>'modalEditVendor','modalTitle'=>'Edit Vendor'])?>
-<?= $this->element('modals',  ['id'=>'modalAddMenu','modalTitle'=>'Add Menu'])?>

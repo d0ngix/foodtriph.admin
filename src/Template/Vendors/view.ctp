@@ -34,13 +34,13 @@ $this->assign('sub_title', h($vendor->uuid));
 						<div class="col-md-12">
 							<div class="nav-tabs-custom">
             					<ul class="nav nav-tabs">
-              						<li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Branch</a></li>
+              						<li class=""><a href="#tab_1" data-toggle="tab" aria-expanded="true">Branch</a></li>
               						<li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Menu</a></li>
-              						<li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false">Menu Add-ons</a></li>
+              						<li class="active"><a href="#tab_3" data-toggle="tab" aria-expanded="false">Menu Add-ons</a></li>
               						<li class=""><a href="#tab_4" data-toggle="tab" aria-expanded="false">My Crew</a></li>
             					</ul>
             					<div class="tab-content">
-              						<div class="tab-pane active" id="tab_1">
+              						<div class="tab-pane " id="tab_1">
               							<div class="row">
               								<div class="pull-right">
 												<button type="button" class="btn bg-olive margin btnNewBranch" data-toggle="modal" data-target="#modalNewBranch" vendor-id=<?=$vendor->id?>>
@@ -54,7 +54,7 @@ $this->assign('sub_title', h($vendor->uuid));
               						<div class="tab-pane" id="tab_2">
               							<div class="row">
               								<div class="pull-right">              								
-												<button type="button" class="btn bg-olive margin btnNewMenu" data-toggle="modal" data-target="#modalNewMenu" id="">
+												<button type="button" class="btn bg-olive margin btnNewMenu" data-toggle="modal" data-target="#modalNewMenu" id="" vendor-id="<?=$vendor->id?>">
 										      		<strong>Add Menu</strong>
 										      	</button>              								
               								</div>
@@ -62,15 +62,15 @@ $this->assign('sub_title', h($vendor->uuid));
 										<?= $this->element('vendor_menus') ?>
 									</div>
 									
-              						<div class="tab-pane" id="tab_3">
+              						<div class="tab-pane active" id="tab_3">
               							<div class="row">
               								<div class="pull-right">
-												<button type="button" class="btn bg-olive margin modalNewMenuAddOns" data-toggle="modal" data-target="#modalNewMenuAddOns" id="">
+												<button type="button" class="btn bg-olive margin btnNewMenuAddOns" data-toggle="modal" data-target="#modalNewMenuAddOns" vendor-id="<?=$vendor->id?>">
 										      		<strong>Add Menu Add-ons</strong>
 										      	</button>              									
               								</div>
               							</div>              							
-										
+										<?= $this->element('vendor_menu_addons',compact('arrMenuAddOns')) ?>
 									</div>
               						<div class="tab-pane" id="tab_4">
               							<div class="row">
@@ -79,7 +79,8 @@ $this->assign('sub_title', h($vendor->uuid));
 										      		<strong>Add Crew Member</strong>
 										      	</button>              								
               								</div>
-              							</div>            																
+              							</div>
+              							<?= $this->element('vendor_crew') ?>            																
 									</div>																		
 				
             					</div>
@@ -96,9 +97,10 @@ $this->assign('sub_title', h($vendor->uuid));
 	    </section>
 	    <!-- /.content -->
 </div>
-<?= $this->element('modals',  ['id'=>'modalNewBranch','modalTitle'=>'New Branch','size'=>'modal-lg'])?>
-<?= $this->element('modals',  ['id'=>'modalNewMenu','modalTitle'=>'New Menu'])?>
-<?= $this->element('modals',  ['id'=>'modalNewMenuAddOns','modalTitle'=>'New Menu Add-ons'])?>
+<?= $this->element('modals',  ['id'=>'modalNewBranch','modalTitle'=>'Add New Branch','size'=>'modal-lg'])?>
+<?= $this->element('modals',  ['id'=>'modalNewMenu','modalTitle'=>'Add New Menu','size'=>'modal-lg'])?>
+<?= $this->element('modals',  ['id'=>'modalNewMenuAddOns','modalTitle'=>'New Menu Add-ons','size'=>'modal-lg'])?>
+<?= $this->element('modals',  ['id'=>'modalNewCrew','modalTitle'=>'Add New Crew','size'=>'modal-lg'])?>
 
 
 <div class="vendors view large-9 medium-8 columns content">

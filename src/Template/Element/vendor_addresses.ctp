@@ -33,7 +33,11 @@
 		                <?= h($vendorAddresses->latitude) ?>
 		                <?= h($vendorAddresses->longitude) ?>	       			
 	       			</p>
-	       			
+	       			<?php if (empty($vendorAddresses->latitude) && empty($vendorAddresses->longitude)):?>
+					<div class="alert alert-danger" style="padding:5px !important;">
+						<i class="icon fa fa-ban"></i> Address Unverifiable! Please update the address.	
+					</div>	       			
+					<?php endif;?>
 				</div>
 				<div class="col-md-4">
 	            	<strong><i class="fa fa-clock-o margin-r-5"></i> Operating Hours</strong>
@@ -68,9 +72,9 @@
 			</div>
 			</div>
 			<div class="box-footer">
-				<div class="pull-left">
+				<div class="pull-left">				
                     <?= $this->Html->link(__('View'), ['controller'=>'vendor_addresses', 'action' => 'view', $vendorAddresses->id],['class'=>'label label-info']) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$vendorAddresses->id],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendorAddresss", 'id'=>"btnEditVendorAddress"] ) ?> 
+                    <?= $this->Html->link(__('Edit'), '#',['class'=>'label label-warning btnEditVendorAddress', 'data-toggle'=>"modal", 'data-target'=>"#modalEditBranch", 'id'=>"btnEditBranch",'vendor-uuid'=>$vendor->uuid,'branch-id'=>$vendorAddresses->id] ) ?> 
                     <?= $this->Form->postLink(__('Delete'), ['controller'=>'vendorAddresses', 'action' => 'delete', $vendorAddresses->id, $vendor->uuid], ['class'=>'label label-danger','confirm' => __("Are you sure you want to delete $vendorAddresses->address_name?")]) ?>
 				</div>                   
             	<div class="pull-right">
@@ -96,4 +100,4 @@
             
 <?php endforeach; ?>
 <?php endif;?>
-
+<?= $this->element('modals',  ['id'=>'modalEditBranch','modalTitle'=>'Edit Branch Details','size'=>'modal-lg'])?>

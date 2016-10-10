@@ -38,11 +38,20 @@ class VendorsController extends AppController
         
         $vendor = $this->Vendors->find('all')
         						->where(['Vendors.uuid'=>$uuid, 'Vendors.status'=>1])
-        						->contain(['MenuAddOns', 'MenuCategories', 'Menus', 'TransactionMessages', 'TransactionPromos', 'Transactions', 'VendorAddresses']);
+        						->contain(	
+        							[
+        								'MenuAddOns', 
+        								'MenuCategories', 
+        								'Menus' => function ($q) {return $q->select()->where(['Menus.deleted' => 0]);}, 
+        								'TransactionMessages', 
+        								'TransactionPromos', 
+        								'Transactions', 
+        								'VendorAddresses'
+        							]
+        						);
         $vendor = $vendor->first();
-              
-//         foreach ($vendor->menus as $v) $arrMenuId[] = $v['id']; 
-//         debug(implode(',', $arrMenuId));die;
+        
+        $this->set('arrMenuAddOns',$this->getMenuAddOns($vendor->id));
         
         $this->set('vendor', $vendor);
         $this->set('_serialize', ['vendor']);
@@ -137,54 +146,15 @@ class VendorsController extends AppController
     	 
     	if ($this->request->is(['patch', 'post', 'put'])) {
 
+    		//setup upload file
+    		$arrImg = $this->uploadImg(['filename'=>$vendor->uuid]);
     		
-    		//-----------
-    		
-    		$imgPath = Configure::read('App.imageBaseUrl') . "vendors";
-    		$storage = new \Upload\Storage\FileSystem($imgPath);
-    		$file = new \Upload\File('photo', $storage);
-    		
-    		// Optionally you can rename the file on upload
-    		$new_filename = $vendor->uuid;
-    		$file->setName($new_filename);
-    		
-    		// Validate file upload
-    		// MimeType List => http://www.iana.org/assignments/media-types/media-types.xhtml
-    		$file->addValidations(array(
-    				// Ensure file is of type "image/png"
-    				//new \Upload\Validation\Mimetype('image/png'),
-    		
-    				//You can also add multi mimetype validation
-    				new \Upload\Validation\Mimetype(array('image/png', 'image/gif', 'image/jpg', 'image/jpeg')),
-    		
-    				// Ensure file is no larger than 5M (use "B", "K", M", or "G")
-    				new \Upload\Validation\Size('5M')
-    		));
-
-    		// Access data about the file that has been uploaded
-    		$data = array(
-    				'name'       => $file->getNameWithExtension(),
-    				'extension'  => $file->getExtension(),
-    				'mime'       => $file->getMimetype(),
-    				'size'       => $file->getSize(),
-    				'md5'        => $file->getMd5(),
-    				'dimensions' => $file->getDimensions()
-    		);
-    		
-    		$data['path'] = $imgPath;
-
-    		$requestData['photo'] = json_encode($data);
+    		if ($arrImg) $requestData['photo'] = json_encode($arrImg);
     		
     		$vendor = $this->Vendors->patchEntity($vendor, $requestData);
     		
     		if ($this->Vendors->save($vendor)) {
-
-    			$filePath = $imgPath . DS . $vendor->uuid . "." . $file->getExtension();
-    			if(file_exists($filePath))
-    				unlink($filePath);
-
-    			$file->upload();
-    			
+    			$this->Flash->success(__('Image upload is Successful.'));    			
     			return $this->redirect(['action' => 'index']);
     		} else {
     			$this->Flash->error(__('The vendor could not be saved. Please, try again.'));

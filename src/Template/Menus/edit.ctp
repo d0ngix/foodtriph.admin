@@ -1,45 +1,113 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $menu->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $menu->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Menus'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Vendors'), ['controller' => 'Vendors', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Vendor'), ['controller' => 'Vendors', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Menu Images'), ['controller' => 'MenuImages', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Menu Image'), ['controller' => 'MenuImages', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Menu Ratings'), ['controller' => 'MenuRatings', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Menu Rating'), ['controller' => 'MenuRatings', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Transaction Items'), ['controller' => 'TransactionItems', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Transaction Item'), ['controller' => 'TransactionItems', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Transaction Promos'), ['controller' => 'TransactionPromos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Transaction Promo'), ['controller' => 'TransactionPromos', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="menus form large-9 medium-8 columns content">
-    <?= $this->Form->create($menu) ?>
-    <fieldset>
-        <legend><?= __('Edit Menu') ?></legend>
-        <?php
-            echo $this->Form->input('ref');
-            echo $this->Form->input('vendor_id', ['options' => $vendors, 'empty' => true]);
-            echo $this->Form->input('name');
-            echo $this->Form->input('description_long');
-            echo $this->Form->input('description_short');
-            echo $this->Form->input('price');
-            echo $this->Form->input('discount');
-            echo $this->Form->input('add_ons');
-            echo $this->Form->input('pax_min');
-            echo $this->Form->input('pax_max');
-            echo $this->Form->input('active');
-            echo $this->Form->input('deleted');
-            echo $this->Form->input('likes');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="row">
+	<div class="col-md-12">
+		<div class="box box-info">
+            <!-- /.box-header -->
+            <!-- form start -->
+           
+           
+		    <?= $this->Form->create($menu,['class'=>"form-horizontal",'type' => 'file']) ?>
+		    		<?php 
+		    			$this->Form->hidden('vendor_id',['value'=>$vendor->id]);
+		    			$this->Form->hidden('vendor_uuid',['value'=>$vendor->uuid]);
+		    		?>
+					<div class="box-body">
+						
+						<div class="form-group">                	
+							<label for="inputRef" class="col-sm-3 control-label">Ref</label>					
+							<div class="col-sm-9">
+	                    		<?=  $this->Form->input('ref',array('label'=>false,'class'=>"form-control",'id'=>'inputRef'));?>	                    		
+	                  		</div>
+                		</div>
+                		
+						<div class="form-group">                	
+							<label for=inputName class="col-sm-3 control-label">Name</label>					
+							<div class="col-sm-9">
+	                    		<?= $this->Form->input('name', ['label'=>false,'class'=>'form-control','id'=>'inputName','required'=>true]);?>
+	                  		</div>
+                		</div>                		
+
+                		<div class="form-group">
+                  			<label for="inputDescShort" class="col-sm-3 control-label">Short Description</label>
+                  			<div class="col-sm-9">                    		
+                    			<?=  $this->Form->input('description_short',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescShort','required'=>true,'maxlength'=>'100'));?>
+                    			<p class="help-block">Summarize whats with this menu in 100 characters</p>
+                  			</div>
+                		</div>                		
+                		
+                		<div class="form-group">
+                  			<label for="inputDescLong" class="col-sm-3 control-label">Long Description</label>
+                  			<div class="col-sm-9">                    		
+                    			<?=  $this->Form->input('description_long',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescLong','required'=>false,'maxlength'=>'500'));?>
+                    			<p class="help-block">Tell us more about the menu in 500 characters</p>
+                  			</div>
+                		</div>
+                		
+                		<div class="form-group">
+                  			<label for="inputPrice" class="col-sm-3 control-label">Price</label>
+                  			<div class="col-sm-9">                    		
+                    			<?=  $this->Form->input('price',array('type'=>'nubmer', 'label'=>false,'class'=>"form-control",'id'=>'inputPrice','required'=>true));?>
+                  			</div>
+                		</div>
+                		
+                		<div class="form-group">
+                  			<label for="inputDiscount" class="col-sm-3 control-label">Discount</label>
+                  			<div class="col-sm-9">                    		
+                    			<?=  $this->Form->input('discount',array('type'=>'nubmer', 'label'=>false,'class'=>"form-control",'id'=>'inputDiscount','required'=>false));?>
+                  			</div>
+                		</div>
+                		
+                		<div class="form-group">
+                  			<label for="inputPaxMin" class="col-sm-3 control-label">Min Pax</label>
+                  			<div class="col-sm-9">                    		
+                    			<?=  $this->Form->input('pax_min',array('type'=>'nubmer', 'label'=>false,'class'=>"form-control",'id'=>'inputPaxMin','required'=>false));?>
+                  			</div>
+                		</div>                		
+                		<div class="form-group">
+                  			<label for="inputPaxMax" class="col-sm-3 control-label">Max Pax</label>
+                  			<div class="col-sm-9">                    		
+                    			<?=  $this->Form->input('pax_max',array('type'=>'nubmer', 'label'=>false,'class'=>"form-control",'id'=>'inputPaxMax','required'=>false));?>
+                  			</div>
+                		</div>   
+                		
+						<div class="form-group">
+							<label for="inputPhoto" class="col-sm-3 control-label">Photo</label>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8">
+										<?= $this->Form->file('photo',['id'=>'inputPhoto'])?>
+										<p class="help-block">Image size within 600x300 and .JPG or .PNG only</p>									
+									</div>
+									<div class="col-sm-4">
+										<?php $arrPhoto = json_decode($menu->photo,true);?>									
+										<img class="img-responsive" alt="Menu Image" src="<?= DS. $arrPhoto['path'] . DS . $arrPhoto['name']?>">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<hr>
+							<label for="inputPhoto" class="col-sm-3 control-label">Menu Add-ons</label>
+							<div class="col-sm-9">
+								
+							<?php 
+								$arrAction = ['showEdit'=>false, 'showDelete'=>false, 'showCheckBox'=>true];
+								echo $this->element('vendor_menu_addons',compact('arrMenuAddOns','arrAction'));
+							?>
+							
+							</div>
+						</div>						
+						
+						                		             		
+              		</div>
+              		
+              		
+              		<!-- /.box-body -->
+	              <div class="box-footer">
+	                <button type="reset" class="btn btn-default">Reset</button>
+	                <?= $this->Form->button(__('Update'),['class'=>'btn btn-primary pull-right']) ?>
+	                <?= $this->Form->end() ?>
+	              </div>
+				<!-- /.box-footer -->
+          </div>	
+	</div>
 </div>

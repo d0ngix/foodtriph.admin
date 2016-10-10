@@ -1,14 +1,14 @@
 <?php if (!empty($vendor->menus)): $counter = 0; $intCol=3; $intDivGrid = 4;?>
 <?php foreach ($vendor->menus as $menus): $counter++; ?>
-<?php ob_start(); ?>	
+<?php ob_start(); ?>
 	<div class="col-md-<?=$intDivGrid?>">
 		<div class="box box-primary">
 			<div class="box-header with-border">
             	<h3 class="box-title pull-left"><?= h($menus->name) ?></h3>
 
 				<div class="pull-right">
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit',$menus->id],['class'=>'label label-warning', 'data-toggle'=>"modal", 'data-target'=>"#modalEditVendor", 'id'=>"btnEditVendor"] ) ?> 
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $menus->id], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $menus->name)]) ?>
+                    <?= $this->Html->link(__('Edit'), '#',['menu-id'=>$menus->id, 'vendor-uuid'=>$vendor->uuid, 'class'=>'label label-warning btnEditMenu', 'data-toggle'=>"modal", 'data-target'=>"#modalEditMenu"] ) ?> 
+                    <?= $this->Form->postLink(__('Delete'), ['controller'=>'menus', 'action' => 'delete', $menus->id,$vendor->uuid], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $menus->name)]) ?>
 				</div>			            	
             	
             </div>
@@ -23,7 +23,7 @@
 							$strImgSrc = DS. $arrPhoto['path'] . DS . $arrPhoto['name'];
 						}
 					?>
-					<img class="img-responsive center-block" alt="Menu Image" src="<?= $strImgSrc?>">
+					<img class="img-responsive center-block img-thumbnail" alt="Menu Image" src="<?= $strImgSrc?>" style="height: 150px !important" >
 				</div>
 				<div class="col-md-12">
 				
@@ -146,5 +146,6 @@
 	if (!($counter % 3)) echo '</div><div class="row">';
 
 ?>
-<?php endforeach;?>
+<?php endforeach;echo '</div>';?>
 <?php endif;?>
+<?= $this->element('modals',  ['id'=>'modalEditMenu','modalTitle'=>'Edit Menu Details','size'=>'modal-lg'])?>

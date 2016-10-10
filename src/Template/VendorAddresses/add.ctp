@@ -67,7 +67,7 @@
 						<div class="form-group">                	
 							<label for="inputCountry" class="col-sm-3 control-label">Country</label>					
 							<div class="col-sm-9">
-	                    		<?= $this->Form->select('country',['PHILIPPINES' => 'PHILIPPINES'],['label'=>false, 'type'=>'text', 'class'=>'form-control', 'default'=>'PHILIPPINES']);?> 
+	                    		<?= $this->Form->select('country',['SINGAPORE' => 'SINGAPORE', 'PHILIPPINES' => 'PHILIPPINES'],['label'=>false, 'type'=>'text', 'class'=>'form-control', 'default'=>'PHILIPPINES']);?> 
 	                  		</div>
                 		</div>                		
 
@@ -86,7 +86,6 @@
 							
 								<?=$this->element('vendor_operation');?>
 	
-	                    		<?= $this->Form->input('operating_hours', ['label'=>false, 'type'=>'text', 'class'=>'form-control']);?>
 	                  		</div>
                 		</div>                		                		
               		</div>

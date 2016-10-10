@@ -5,9 +5,10 @@
             <!-- form start -->
            
            
-		    <?= $this->Form->create($menu,array('class'=>"form-horizontal")) ?>
+		    <?= $this->Form->create($menu,['class'=>"form-horizontal",'type' => 'file']) ?>
 		    		<?php 
-		    			$this->Form->hidden('vendor_id',['value'=>$intVendorId]);
+		    			$this->Form->hidden('vendor_id',['value'=>$vendor->id]);
+		    			$this->Form->hidden('vendor_uuid',['value'=>$vendor->uuid]);
 		    		?>
 					<div class="box-body">
 						
@@ -28,7 +29,7 @@
                 		<div class="form-group">
                   			<label for="inputDescShort" class="col-sm-3 control-label">Short Description</label>
                   			<div class="col-sm-9">                    		
-                    			<?=  $this->Form->input('description_short',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescShort','required'=>true));?>
+                    			<?=  $this->Form->input('description_short',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescShort','required'=>true,'maxlength'=>'100'));?>
                     			<p class="help-block">Summarize whats with this menu in 100 characters</p>
                   			</div>
                 		</div>                		
@@ -36,7 +37,7 @@
                 		<div class="form-group">
                   			<label for="inputDescLong" class="col-sm-3 control-label">Long Description</label>
                   			<div class="col-sm-9">                    		
-                    			<?=  $this->Form->input('description_long',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescLong','required'=>false));?>
+                    			<?=  $this->Form->input('description_long',array('type'=>'textarea', 'label'=>false,'class'=>"form-control",'id'=>'inputDescLong','required'=>false,'maxlength'=>'500'));?>
                     			<p class="help-block">Tell us more about the menu in 500 characters</p>
                   			</div>
                 		</div>
