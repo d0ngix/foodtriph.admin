@@ -70,7 +70,8 @@ $this->assign('sub_title', h($vendor->uuid));
 										      	</button>              									
               								</div>
               							</div>              							
-										<?= $this->element('vendor_menu_addons',compact('arrMenuAddOns')) ?>
+              							<?php $arrAction = ['showEdit'=>true, 'showDelete'=>true, 'showCheckBox'=>false];?>
+										<?= $this->element('vendor_menu_addons',compact('arrMenuAddOns','arrAction')) ?>
 									</div>
               						<div class="tab-pane" id="tab_4">
               							<div class="row">

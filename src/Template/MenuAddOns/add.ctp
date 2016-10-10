@@ -18,7 +18,7 @@ debug($parentMenuAddOns->all()->count());
 						<div class="form-group">                	
 							<label for="inputName1" class="col-sm-3 control-label">Description</label>					
 							<div class="col-sm-9">
-	                    		<?= $this->Form->input('description', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
+	                    		<?= $this->Form->input('desc', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
 	                  		</div>
                 		</div>		    		
 		    		</div>
@@ -58,7 +58,7 @@ debug($parentMenuAddOns->all()->count());
 						<div class="form-group">                	
 							<label for="inputName1" class="col-sm-3 control-label">Description</label>					
 							<div class="col-sm-9">
-	                    		<?= $this->Form->input('description', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
+	                    		<?= $this->Form->input('desc', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
 	                  		</div>
                 		</div>                		
 						<div class="form-group">                	

@@ -43,7 +43,7 @@ description
 <?php 
 $counter = 0; 
 $intDivGrid = 6;
-
+debug($arrAction);
 if (empty($arrAction['showEdit'])) $arrAction['showEdit'] = false;
 if (empty($arrAction['showDelete'])) $arrAction['showDelete'] = false;
 if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
