@@ -122,18 +122,38 @@ class AppController extends Controller
 	public function getMenuAddOns ($vendorId) {
 		$arrMenuAddOns = null;
 		$menuAddOns = TableRegistry::get('MenuAddOns');
-		$menuAddOns = $menuAddOns->find('all')->where(['MenuAddOns.vendor_id'=> $vendorId])->all();
+		$menuAddOns = $menuAddOns->find('all')->where(['MenuAddOns.vendor_id'=> $vendorId])->order(['parent_id ASC'])->all();
+
 		foreach ($menuAddOns as $v){
+
 			if ( 0 === $v->parent_id ) {
-				$arrMenuAddOns[$v->id] = [];
-				$arrMenuAddOns[$v->id] = ['category_name'=>$v->add_on_name, 'description' => $v->description];
+				//$arrMenuAddOns[$v->id] = [];
+				$arrMenuAddOns[$v->id] = ['id'=>$v->id, 'category_name'=>$v->add_on_name, 'description' => $v->description];
 				continue;
 			}
+			
 			$arrMenuAddOns[$v->parent_id]['items'][] = $v;
+
 		}		
 		
 		if ($arrMenuAddOns) return $arrMenuAddOns;
 		
 		return false;
 	}
+	
+	public function getLatLang (&$vendorAddress) {
+		//Get lat/long
+		//https://maps.googleapis.com/maps/api/geocode/json?address=122E%20Rivervale%20Drive,%20Sengkang%20Singapore
+		$strAddress = urlencode("$vendorAddress->address2 $vendorAddress->street $vendorAddress->city $vendorAddress->state $vendorAddress->country $vendorAddress->post_code") ;
+		$arrLoc = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=" . $strAddress);
+		$arrLoc = json_decode($arrLoc, true);
+		 
+		if (!empty($arrLoc['results'])) {
+			$vendorAddress->latitude = $arrLoc['results'][0]['geometry']['location']['lat'];
+			$vendorAddress->longitude = $arrLoc['results'][0]['geometry']['location']['lng'];
+			$vendorAddress->place_id = $arrLoc['results'][0]['place_id'];
+		}
+	
+		return $vendorAddress;
+	}	
 }

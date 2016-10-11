@@ -54,33 +54,47 @@ class MenusController extends AppController
      *
      * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
      */
-    public function add($vendorId)
+    public function add($vendorUuid)
     {
         $menu = $this->Menus->newEntity();
-        $vendor = $this->Menus->Vendors->find('all')->where(['id' => $vendorId])->first();
+        $vendor = $this->Menus->Vendors->find('all')->where(['uuid' => $vendorUuid])->first();
+        $arrMenuAddOns = $this->getMenuAddOns($vendor->id);
+        
         if ($this->request->is('post')) {
+        	
+        	if (!empty($this->request->data['add_ons'])) {
+        		foreach ($this->request->data['add_ons'] as $v) {
+        			//debug(json_decode($v,true));
+        			$arrAddOns[] = json_decode($v,true);
+        		}
+        	
+        		if (!empty($arrAddOns))
+        			$this->request->data['add_ons'] = json_encode($arrAddOns);
+        	}
+        	//         	debug($this->request->data['add_ons']);
+        	//         	die;        	
         	
         	if($this->request->data['photo']['size']) {
 	        	//img upload setup
-	        	$strFilename = $vendorId . '_' . preg_replace('/\s+/', '_', $this->request->data['name']);
+	        	$strFilename = $vendor->id . '_' . preg_replace('/\s+/', '_', $this->request->data['name']);
 	        	$arrImg = $this->uploadImg(['filename'=>$strFilename]);        	
 	        	if ($arrImg) $this->request->data['photo'] = json_encode($arrImg);        	
         	}
         	        	
-        	$this->request->data['vendor_id'] = $vendorId;
+        	$this->request->data['vendor_id'] = $vendor->id;
         	$this->request->data['price'] = number_format($this->request->data['price'],2);
         	
             $menu = $this->Menus->patchEntity($menu, $this->request->data);
             if ($this->Menus->save($menu)) {
                 $this->Flash->success(__('The menu has been saved.'));
-                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendor->uuid]);
+                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendor->uuid, "refTab:".$this->name]);
             } else {
                 $this->Flash->error(__('The menu could not be saved. Please, try again.'));
             }
         }
         $vendors = $this->Menus->Vendors->find('list', ['limit' => 200]);
         
-        $this->set(compact('menu', 'vendors','vendor'));
+        $this->set(compact('menu', 'vendors','vendor','arrMenuAddOns'));
         $this->set('_serialize', ['menu']);
         
         if ($this->request->is('Ajax'))
@@ -126,7 +140,7 @@ class MenusController extends AppController
             $menu = $this->Menus->patchEntity($menu, $this->request->data);
             if ($this->Menus->save($menu)) {
                 $this->Flash->success(__('The menu has been saved.'));
-                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid]);
+                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid, "refTab:".$this->name]);
             } else {
                 $this->Flash->error(__('The menu could not be saved. Please, try again.'));
             }
@@ -153,7 +167,7 @@ class MenusController extends AppController
         $menu->deleted = 1;
         if ($this->Menus->save($menu)) {
             $this->Flash->success(__('The menu has been deleted.'));
-            return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid]);
+            return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid, "refTab:".$this->name]);
         } else {
             $this->Flash->error(__('The menu could not be deleted. Please, try again.'));
         }

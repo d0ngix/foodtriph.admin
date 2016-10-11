@@ -1,5 +1,4 @@
 <?php
-use Cake\Utility\Hash;
 /*
 [
 	{
@@ -43,12 +42,13 @@ description
 <?php 
 $counter = 0; 
 $intDivGrid = 6;
-debug($arrAction);
+
+//button control
 if (empty($arrAction['showEdit'])) $arrAction['showEdit'] = false;
 if (empty($arrAction['showDelete'])) $arrAction['showDelete'] = false;
 if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
 ?>
-<?php foreach ($arrMenuAddOns as $k=>$v): $counter++;?>
+<?php foreach ($arrMenuAddOns as $k=>$v): $counter++; ?>
 <?php ob_start(); ?>
 	<div class="col-md-<?=$intDivGrid?>">
 		<div class="box box-primary">
@@ -60,7 +60,7 @@ if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
            					'add_on_name'=> $v['category_name'],
 							'items' => @$v['items']
 						]; 
-           				echo $this->Form->hidden('add_ons[]',['value'=>$arrAddOn])
+           				echo $this->Form->hidden('add_ons[]',['value'=>json_encode($arrAddOn)])           				
            			?>
            				<input type="checkbox" name="menu_add_on_id[]" id="<?=$k?>" value="<?=$k?>" />
            		<?php endif;?>            	
@@ -71,15 +71,19 @@ if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
             	</h3>
 
 				<div class="pull-right">
-                    <?//= $this->Html->link(__('Edit'), '#',['menu-id'=>$menus->id, 'vendor-uuid'=>$vendor->uuid, 'class'=>'label label-warning btnEditMenu', 'data-toggle'=>"modal", 'data-target'=>"#modalEditMenu"] ) ?> 
-                    <?//= $this->Form->postLink(__('Delete'), ['controller'=>'menus', 'action' => 'delete', $menus->id,$vendor->uuid], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $menus->name)]) ?>
+					<?php if ($arrAction['showEdit']):?>
+                    	<?= $this->Html->link(__('Edit'), '#',['menu-addon-id'=>$v['id'], 'vendor-uuid'=>$vendor->uuid, 'class'=>'label label-warning btnEditMenuAddOn', 'data-toggle'=>"modal", 'data-target'=>"#modalEditMenuAddOn"] ) ?>
+                    <?php endif;?>
+                    <?php if ($arrAction['showDelete']):?> 
+                    	<?= $this->Form->postLink(__('Delete'), ['controller'=>'menu_add_ons', 'action' => 'delete', $v['id'], $vendor->uuid], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $v['category_name'])]) ?>
+                    <?php endif;?>
 				</div>			            	
             	
             </div>
-            		
+
 			<div class="box-body border-between">
 				<?php if (!empty($v['items'])):?>
-				<?php foreach($v['items'] as $v1):?>
+				<?php foreach($v['items'] as $v1): ?>
 				<div class="row">
 					<div class="col-md-4">
 						<span class="text-muted"><?=$v1->add_on_name?> </span>					
@@ -91,10 +95,10 @@ if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
 					<div class="col-md-4">
 						<div class="pull-right">
 							<?php if ($arrAction['showEdit']):?>
-		                    	<?= $this->Html->link(__('Edit'), '#',['menu-addon-id'=>$v1->id, 'class'=>'label label-warning btnEditMenuAddOn', 'data-toggle'=>"modal", 'data-target'=>"#modalEditMenuAddOn"] ) ?>
+			                    <?= $this->Html->link(__('Edit'), '#',['menu-addon-id'=>$v1->id, 'vendor-uuid'=>$vendor->uuid, 'class'=>'label label-warning btnEditMenuAddOn', 'data-toggle'=>"modal", 'data-target'=>"#modalEditMenuAddOn"] ) ?> 
 		                    <?php endif;?>
 							<?php if ($arrAction['showDelete']):?>
-        		            	<?= $this->Form->postLink(__('Delete'), ['controller'=>'menuAddOns', 'action' => 'delete', $v1->id], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $v1->add_on_name)]) ?>
+                    			<?= $this->Form->postLink(__('Delete'), ['controller'=>'menu_add_ons', 'action' => 'delete', $v1->id, $vendor->uuid], ['class'=>'label label-danger','confirm' => __('Are you sure you want to delete {0}?', $v1->add_on_name)]) ?>
         		            <?php endif;?>						
 						</div>					
 					</div>									

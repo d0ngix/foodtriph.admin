@@ -50,9 +50,8 @@ $(".btnNewMenu").click(function(e){
 	e.preventDefault();
 	obj = $(this);
     $.ajax({
-        url: "/menus/add/"+obj.attr('vendor-id'), 
+        url: "/menus/add/"+obj.attr('vendor-uuid'), 
         success: function(result){
-        	console.log(result);
         	$("#modalNewMenu .modal-body").html(result);
     	}
 	});
@@ -79,7 +78,7 @@ $(".btnNewBranch").click(function(e){
 	e.preventDefault();
 	obj = $(this);
 	$.ajax({
-	    url: "/vendorAddresses/add/"+obj.attr('vendor-id'), 
+	    url: "/vendorAddresses/add/"+obj.attr('vendor-uuid'), 
 	    success: function(result){
 	    	$("#modalNewBranch .modal-body").html(result);
 		}
@@ -105,13 +104,28 @@ $(".btnEditVendorAddress").click(function(e){
 /**
  * Modal - Add New Menu Addons
  */
-$(".btnNewMenuAddOns").click(function(e){
+$(".btnNewMenuAddOn").click(function(e){
 	e.preventDefault();
 	obj = $(this);
 	$.ajax({
-	    url: "/menuAddOns/add/"+obj.attr('vendor-id'), 
+	    url: "/menuAddOns/add/"+obj.attr('vendor-uuid'), 
 	    success: function(result){
-	    	$("#modalNewMenuAddOns .modal-body").html(result);
+	    	$("#modalNewMenuAddOn .modal-body").html(result);
+		}
+	});
+
+});
+
+/**
+ * Modal - Edit Menu Addons
+ */
+$(".btnEditMenuAddOn").click(function(e){
+	e.preventDefault();
+	obj = $(this);
+	$.ajax({
+	    url: "/menuAddOns/edit/"+obj.attr('menu-addon-id')+'/'+obj.attr('vendor-uuid'), 
+	    success: function(result){
+	    	$("#modalEditMenuAddOn .modal-body").html(result);
 		}
 	});
 

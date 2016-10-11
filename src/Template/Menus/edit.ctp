@@ -1,17 +1,14 @@
+<?= $this->Form->create($menu,['class'=>"form-horizontal",'type' => 'file']) ?>
+<?php 
+$this->Form->hidden('vendor_id',['value'=>$vendor->id]);
+$this->Form->hidden('vendor_uuid',['value'=>$vendor->uuid]);
+?>
 <div class="row">
 	<div class="col-md-12">
 		<div class="box box-info">
             <!-- /.box-header -->
             <!-- form start -->
-           
-           
-		    <?= $this->Form->create($menu,['class'=>"form-horizontal",'type' => 'file']) ?>
-		    		<?php 
-		    			$this->Form->hidden('vendor_id',['value'=>$vendor->id]);
-		    			$this->Form->hidden('vendor_uuid',['value'=>$vendor->uuid]);
-		    		?>
 					<div class="box-body">
-						
 						<div class="form-group">                	
 							<label for="inputRef" class="col-sm-3 control-label">Ref</label>					
 							<div class="col-sm-9">
@@ -84,20 +81,17 @@
 								</div>
 							</div>
 						</div>
+						
 						<div class="form-group">
 							<hr>
 							<label for="inputPhoto" class="col-sm-3 control-label">Menu Add-ons</label>
-							<div class="col-sm-9">
-								
+							<div class="col-sm-9">							
 							<?php 
 								$arrAction = ['showEdit'=>false, 'showDelete'=>false, 'showCheckBox'=>true];
 								echo $this->element('vendor_menu_addons',compact('arrMenuAddOns','arrAction'));
 							?>
-							
 							</div>
-						</div>						
-						
-						                		             		
+						</div>												                		             		
               		</div>
               		
               		
@@ -105,9 +99,9 @@
 	              <div class="box-footer">
 	                <button type="reset" class="btn btn-default">Reset</button>
 	                <?= $this->Form->button(__('Update'),['class'=>'btn btn-primary pull-right']) ?>
-	                <?= $this->Form->end() ?>
 	              </div>
 				<!-- /.box-footer -->
           </div>	
 	</div>
 </div>
+<?= $this->Form->end() ?>

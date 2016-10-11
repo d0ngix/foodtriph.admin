@@ -1,17 +1,14 @@
+<?= $this->Form->create($menu,['class'=>"form-horizontal",'type' => 'file']) ?>
+<?php 
+$this->Form->hidden('vendor_id',['value'=>$vendor->id]);
+$this->Form->hidden('vendor_uuid',['value'=>$vendor->uuid]);
+?>
 <div class="row">
 	<div class="col-md-12">
 		<div class="box box-info">
             <!-- /.box-header -->
             <!-- form start -->
-           
-           
-		    <?= $this->Form->create($menu,['class'=>"form-horizontal",'type' => 'file']) ?>
-		    		<?php 
-		    			$this->Form->hidden('vendor_id',['value'=>$vendor->id]);
-		    			$this->Form->hidden('vendor_uuid',['value'=>$vendor->uuid]);
-		    		?>
 					<div class="box-body">
-						
 						<div class="form-group">                	
 							<label for="inputRef" class="col-sm-3 control-label">Ref</label>					
 							<div class="col-sm-9">
@@ -56,26 +53,6 @@
                   			</div>
                 		</div>
                 		
-                		<!-- 
-						<div class="form-group">
-                  			<label for="inputAddOns" class="col-sm-3 control-label">Add-ons</label>
-                  			<div class="col-sm-9">   
-                  				<?php 
-                  					$arrAddOns = ['toppings','drinks','shit'];
-                  				?>   
-								<?=  $this->Form->select('add_ons',$arrAddOns,['multiple'=>true,'label'=>false,'class'=>"form-control select2",'id'=>'inputAddOns','required'=>false]);?>                  			              		
-			                		<select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
-			                  			<option>Alabama</option>
-			                  			<option>Alaska</option>
-			                  			<option>California</option>
-			                  			<option>Delaware</option>
-			                  			<option>Tennessee</option>
-			                  			<option>Texas</option>
-			                  			<option>Washington</option>
-			                		</select>			              		
-                  			</div>
-              			</div>
-              			 -->                		
                 		<div class="form-group">
                   			<label for="inputPaxMin" class="col-sm-3 control-label">Min Pax</label>
                   			<div class="col-sm-9">                    		
@@ -92,19 +69,41 @@
 						<div class="form-group">
 							<label for="inputPhoto" class="col-sm-3 control-label">Photo</label>
 							<div class="col-sm-9">
-								<?= $this->Form->file('photo',['id'=>'inputPhoto'])?>
-								<p class="help-block">Image size within 600x300 and .JPG or .PNG only</p>
+								<div class="row">
+									<div class="col-sm-8">
+										<?= $this->Form->file('photo',['id'=>'inputPhoto'])?>
+										<p class="help-block">Image size within 600x300 and .JPG or .PNG only</p>									
+									</div>
+									<!-- 
+									<div class="col-sm-4">
+										<?php $arrPhoto = json_decode($menu->photo,true);?>									
+										<img class="img-responsive" alt="Menu Image" src="<?= DS. $arrPhoto['path'] . DS . $arrPhoto['name']?>">
+									</div>
+									 -->
+								</div>
 							</div>
-						</div>                		             		
-                		
+						</div>
+						
+						<div class="form-group">
+							<hr>
+							<label for="inputPhoto" class="col-sm-3 control-label">Menu Add-ons</label>
+							<div class="col-sm-9">							
+							<?php 
+								$arrAction = ['showEdit'=>false, 'showDelete'=>false, 'showCheckBox'=>true];
+								echo $this->element('vendor_menu_addons',compact('arrMenuAddOns','arrAction'));
+							?>
+							</div>
+						</div>												                		             		
               		</div>
+              		
+              		
               		<!-- /.box-body -->
 	              <div class="box-footer">
 	                <button type="reset" class="btn btn-default">Reset</button>
-	                <?= $this->Form->button(__('Submit'),['class'=>'btn btn-primary pull-right']) ?>
-	                <?= $this->Form->end() ?>
+	                <?= $this->Form->button(__('Update'),['class'=>'btn btn-primary pull-right']) ?>
 	              </div>
 				<!-- /.box-footer -->
           </div>	
 	</div>
 </div>
+<?= $this->Form->end() ?>

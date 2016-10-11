@@ -37,7 +37,7 @@ class MenuAddOnsTable extends Table
         parent::initialize($config);
 
         $this->table('menu_add_ons');
-        $this->displayField('id');
+        $this->displayField('add_on_name');
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');

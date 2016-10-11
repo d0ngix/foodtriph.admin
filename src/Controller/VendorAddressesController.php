@@ -50,7 +50,7 @@ class VendorAddressesController extends AppController
      *
      * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
      */
-    public function add($vendorId)
+    public function add($vendorUuid)
     {
         $vendorAddress = $this->VendorAddresses->newEntity();
         if ($this->request->is('post')) {
@@ -71,15 +71,14 @@ class VendorAddressesController extends AppController
             
             if ($this->VendorAddresses->save($vendorAddress)) {
                 $this->Flash->success(__('The vendor address has been saved.'));
-
-                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $this->request->data['vendor_uuid']]);
+                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $this->request->data['vendor_uuid'], "refTab:".$this->name]);
             } else {
                 $this->Flash->error(__('The vendor address could not be saved. Please, try again.'));
             }
             
         }
         $vendors = $this->VendorAddresses->Vendors->find('all', ['limit' => 200]);
-        $vendor = $this->VendorAddresses->Vendors->get($vendorId);    
+        $vendor = $this->VendorAddresses->Vendors->find()->where(['Vendors.uuid'=>$vendorUuid])->first();    
         
         $this->set(compact('vendorAddress', 'vendors','vendor'));
         $this->set('_serialize', ['vendorAddress']);
@@ -111,13 +110,13 @@ class VendorAddressesController extends AppController
         	}
         	unset($this->request->data['op']);       
 
+        	
         	$this->getLatLang($vendorAddress);
         	
             $vendorAddress = $this->VendorAddresses->patchEntity($vendorAddress, $this->request->data);
             if ($this->VendorAddresses->save($vendorAddress)) {
                 $this->Flash->success(__('The vendor address has been saved.'));
-
-                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid]);
+                return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid, "refTab:".$this->name]);
             } else {
                 $this->Flash->error(__('The vendor address could not be saved. Please, try again.'));
             }
@@ -146,29 +145,12 @@ class VendorAddressesController extends AppController
         $vendorAddress->deleted = 1;
         if ($this->VendorAddresses->save($vendorAddress)) {
             $this->Flash->success(__('The vendor address has been deleted.'));            
-            return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid]);
+            return $this->redirect(['controller'=>'vendors', 'action' => 'view', $vendorUuid, "#".$this->name]);            
         } else {
             $this->Flash->error(__('The vendor address could not be deleted. Please, try again.'));
         }
 
         return $this->redirect(['action' => 'index']);
-    }
-
-	
-    private function getLatLang (&$vendorAddress) {
-    	//Get lat/long
-    	//https://maps.googleapis.com/maps/api/geocode/json?address=122E%20Rivervale%20Drive,%20Sengkang%20Singapore
-    	$strAddress = urlencode("$vendorAddress->address2 $vendorAddress->street $vendorAddress->city $vendorAddress->state $vendorAddress->country $vendorAddress->post_code") ;
-    	$arrLoc = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=" . $strAddress);
-    	$arrLoc = json_decode($arrLoc, true);
-    	
-    	if (!empty($arrLoc['results'])) {
-    		$vendorAddress->latitude = $arrLoc['results'][0]['geometry']['location']['lat'];
-    		$vendorAddress->longitude = $arrLoc['results'][0]['geometry']['location']['lng'];
-    		$vendorAddress->place_id = $arrLoc['results'][0]['place_id'];
-    	}
-
-    	return $vendorAddress;
     }
 
 }

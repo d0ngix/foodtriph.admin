@@ -1,4 +1,4 @@
-<?php if (!empty($vendor->menus)): $counter = 0; $intCol=3; $intDivGrid = 4;?>
+<?php if (!empty($vendor->menus)): $counter = 0; $intDivGrid = 6;?>
 <?php foreach ($vendor->menus as $menus): $counter++; ?>
 <?php ob_start(); ?>
 	<div class="col-md-<?=$intDivGrid?>">
@@ -79,31 +79,36 @@
 	                    			</h4>
 	                  			</div>
 	                  			<div id="collapseTwo_<?=$counter?>" class="panel-collapse collapse" aria-expanded="false" style="">
-									<?php 
-										$arrAddOns = json_decode($menus->add_ons, true);
-										//debug($arrAddOns);
-									?>	    
+									<?php $arrAddOns = json_decode($menus->add_ons, true);?>
+									<?php if (!empty($arrAddOns)):?>	    
 									<?php foreach ($arrAddOns as $k => $v):?>
 	                  				<div class="box-header with-border">
               							<i class="fa fa-th-large"></i>
               							<h3 class="box-title"><?=$v['add_on_name']?></h3>
             						</div>
             						<div class="box-body">
+            							<?php if (!empty($v['items'])):?>
             							<ul>
 											<?php foreach ($v['items'] as $item):?>
 												<li>
 													<div>
-														<?=$item['name'] . " @ <strong>$defaultCurrencySymbol " . number_format($item['price'], 2) . "</strong>"?><br>
+														<?=$item['add_on_name'] . " @ <strong>$defaultCurrencySymbol " . number_format($item['price'], 2) . "</strong>"?><br>
 													</div>
+													<!-- 
 													<div class="pull-right">Ref: <?=@$item['ref']?></div>
 													<div>
-														<?=$item['desc']?>
+														<?=$item['description']?>
 													</div>
+													 -->
 												</li>
 											<?php endforeach;?>																	            								
             							</ul>
+            							<?php endif;?>
             						</div>    
-	                    			<?php endforeach;?>									
+	                    			<?php endforeach;?>
+	                    			<?php else:?>
+	                    			<div><span class="text-muted">- This menu has no add-ons -</span></div>
+	                    			<?php endif;?>									
 	                  			</div>
 	                		</div>	              		
 			                
@@ -135,16 +140,11 @@
  -->
 		</div>
 	</div>
-	<?php //if( !($counter % $intCol) || $counter == 1) echo '</div>' //create new div row - end?>
 <?php $strHtml = ob_get_clean()?>
 <?php
 	if($counter === 1) echo '<div class="row">';
-		
-	
-	echo $strHtml;
-		
-	if (!($counter % 3)) echo '</div><div class="row">';
-
+	echo $strHtml;		
+	if (!($counter % (12/$intDivGrid) )) echo '</div><div class="row">';
 ?>
 <?php endforeach;echo '</div>';?>
 <?php endif;?>

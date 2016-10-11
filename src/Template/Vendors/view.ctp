@@ -1,6 +1,11 @@
 <?php
+
 $this->assign('title', h($vendor->name));
 $this->assign('sub_title', h($vendor->uuid));
+
+use Cake\Routing\Router;
+extract(Router::parseNamedParams($this->request)->params['named']);
+if (empty($refTab)) $refTab = 'VendorAddresses';
 ?>
 
 <div class="row">
@@ -34,16 +39,16 @@ $this->assign('sub_title', h($vendor->uuid));
 						<div class="col-md-12">
 							<div class="nav-tabs-custom">
             					<ul class="nav nav-tabs">
-              						<li class=""><a href="#tab_1" data-toggle="tab" aria-expanded="true">Branch</a></li>
-              						<li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Menu</a></li>
-              						<li class="active"><a href="#tab_3" data-toggle="tab" aria-expanded="false">Menu Add-ons</a></li>
+              						<li class="<?=($refTab === 'VendorAddresses') ? 'active' : '';?>"><a href="#VendorAddresses" data-toggle="tab" aria-expanded="true">Branch</a></li>
+              						<li class="<?=($refTab === 'Menus') ? 'active' : '';?>"><a href="#Menus" data-toggle="tab" aria-expanded="false">Menu</a></li>
+              						<li class="<?=($refTab === 'MenuAddOns') ? 'active' : '';?>"><a href="#MenuAddOns" data-toggle="tab" aria-expanded="false">Menu Add-ons</a></li>
               						<li class=""><a href="#tab_4" data-toggle="tab" aria-expanded="false">My Crew</a></li>
             					</ul>
             					<div class="tab-content">
-              						<div class="tab-pane " id="tab_1">
+              						<div class="tab-pane <?=($refTab === 'VendorAddresses') ? 'active' : '';?>" id="VendorAddresses">
               							<div class="row">
               								<div class="pull-right">
-												<button type="button" class="btn bg-olive margin btnNewBranch" data-toggle="modal" data-target="#modalNewBranch" vendor-id=<?=$vendor->id?>>
+												<button type="button" class="btn bg-olive margin btnNewBranch" data-toggle="modal" data-target="#modalNewBranch" vendor-uuid=<?=$vendor->uuid?>>
 										      		<strong>New Branch</strong>
 										      	</button>              									
               								</div>
@@ -51,10 +56,10 @@ $this->assign('sub_title', h($vendor->uuid));
 										<?= $this->element('vendor_addresses') ?>
                 					</div>
               
-              						<div class="tab-pane" id="tab_2">
+              						<div class="tab-pane <?=($refTab === 'Menus') ? 'active' : '';?>" id="Menus">
               							<div class="row">
               								<div class="pull-right">              								
-												<button type="button" class="btn bg-olive margin btnNewMenu" data-toggle="modal" data-target="#modalNewMenu" id="" vendor-id="<?=$vendor->id?>">
+												<button type="button" class="btn bg-olive margin btnNewMenu" data-toggle="modal" data-target="#modalNewMenu" id="" vendor-uuid="<?=$vendor->uuid?>">
 										      		<strong>Add Menu</strong>
 										      	</button>              								
               								</div>
@@ -62,10 +67,10 @@ $this->assign('sub_title', h($vendor->uuid));
 										<?= $this->element('vendor_menus') ?>
 									</div>
 									
-              						<div class="tab-pane active" id="tab_3">
+              						<div class="tab-pane <?=($refTab === 'MenuAddOns') ? 'active' : '';?>" id="MenuAddOns">
               							<div class="row">
               								<div class="pull-right">
-												<button type="button" class="btn bg-olive margin btnNewMenuAddOns" data-toggle="modal" data-target="#modalNewMenuAddOns" vendor-id="<?=$vendor->id?>">
+												<button type="button" class="btn bg-olive margin btnNewMenuAddOn" data-toggle="modal" data-target="#modalNewMenuAddOn" vendor-uuid="<?=$vendor->uuid?>">
 										      		<strong>Add Menu Add-ons</strong>
 										      	</button>              									
               								</div>
@@ -73,6 +78,7 @@ $this->assign('sub_title', h($vendor->uuid));
               							<?php $arrAction = ['showEdit'=>true, 'showDelete'=>true, 'showCheckBox'=>false];?>
 										<?= $this->element('vendor_menu_addons',compact('arrMenuAddOns','arrAction')) ?>
 									</div>
+									
               						<div class="tab-pane" id="tab_4">
               							<div class="row">
               								<div class="pull-right">
@@ -100,10 +106,10 @@ $this->assign('sub_title', h($vendor->uuid));
 </div>
 <?= $this->element('modals',  ['id'=>'modalNewBranch','modalTitle'=>'Add New Branch','size'=>'modal-lg'])?>
 <?= $this->element('modals',  ['id'=>'modalNewMenu','modalTitle'=>'Add New Menu','size'=>'modal-lg'])?>
-<?= $this->element('modals',  ['id'=>'modalNewMenuAddOns','modalTitle'=>'New Menu Add-ons','size'=>'modal-lg'])?>
+<?= $this->element('modals',  ['id'=>'modalNewMenuAddOn','modalTitle'=>'New Menu Add-ons','size'=>'modal-lg'])?>
 <?= $this->element('modals',  ['id'=>'modalNewCrew','modalTitle'=>'Add New Crew','size'=>'modal-lg'])?>
 
-
+<!-- 
 <div class="vendors view large-9 medium-8 columns content">
     
     <table class="vertical-table">
@@ -394,3 +400,4 @@ $this->assign('sub_title', h($vendor->uuid));
         <li><?= $this->Html->link(__('New Vendor Address'), ['controller' => 'VendorAddresses', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
+ -->
