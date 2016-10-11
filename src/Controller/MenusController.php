@@ -1,6 +1,8 @@
 <?php
 namespace App\Controller;
 
+use Cake\Utility\Hash;
+
 use Cake\ORM\TableRegistry;
 
 use Cake\Database\Schema\Table;
@@ -62,17 +64,8 @@ class MenusController extends AppController
         
         if ($this->request->is('post')) {
         	
-        	if (!empty($this->request->data['add_ons'])) {
-        		foreach ($this->request->data['add_ons'] as $v) {
-        			//debug(json_decode($v,true));
-        			$arrAddOns[] = json_decode($v,true);
-        		}
-        	
-        		if (!empty($arrAddOns))
-        			$this->request->data['add_ons'] = json_encode($arrAddOns);
-        	}
-        	//         	debug($this->request->data['add_ons']);
-        	//         	die;        	
+        	$this->setupMenuAddOns($this->request->data);
+        	//debug($this->request->data);die;
         	
         	if($this->request->data['photo']['size']) {
 	        	//img upload setup
@@ -117,17 +110,8 @@ class MenusController extends AppController
         
         if ($this->request->is(['patch', 'post', 'put'])) {
 
-        	if (!empty($this->request->data['add_ons'])) {
-        		foreach ($this->request->data['add_ons'] as $v) {
-        			//debug(json_decode($v,true));
-        			$arrAddOns[] = json_decode($v,true);
-        		}
-        		
-        		if (!empty($arrAddOns))
-        			$this->request->data['add_ons'] = json_encode($arrAddOns);        		
-        	}
-//         	debug($this->request->data['add_ons']);
-//         	die;
+        	$this->setupMenuAddOns($this->request->data);        	
+        	//debug($this->request->data);die;
         	
         	if($this->request->data['photo']['size']) {
         		//img upload setup
@@ -173,5 +157,25 @@ class MenusController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+    
+    private function setupMenuAddOns (&$data) {
+    	if (!empty($data['add_ons']) && !empty($data['add_on_parent_id'])) {
+    		foreach ($data['add_ons'] as $v) {
+    			if (in_array(json_decode($v,true)['id'], $data['add_on_parent_id']))
+    				$arrAddOns[] = json_decode($v,true);
+    			//$addOnParentIds[] = json_decode($v,true)['id'];
+    		}
+    	
+    		if (!empty($arrAddOns))
+    			$data['add_ons'] = json_encode($arrAddOns);
+    	
+    		$data['add_on_parent_id'] = json_encode($data['add_on_parent_id']);
+    	} else {
+    		unset($data['add_on_parent_id']);
+    		unset($data['add_ons']);
+    	}
+    	
+    	return $data;
     }
 }

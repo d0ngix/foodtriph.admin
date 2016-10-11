@@ -122,7 +122,10 @@ class AppController extends Controller
 	public function getMenuAddOns ($vendorId) {
 		$arrMenuAddOns = null;
 		$menuAddOns = TableRegistry::get('MenuAddOns');
-		$menuAddOns = $menuAddOns->find('all')->where(['MenuAddOns.vendor_id'=> $vendorId])->order(['parent_id ASC'])->all();
+		$menuAddOns = $menuAddOns->find('all')
+							->select(['id','parent_id','ref','add_on_name','price','description'])
+							->where(['MenuAddOns.vendor_id'=> $vendorId])
+							->order(['parent_id ASC'])->all();
 
 		foreach ($menuAddOns as $v){
 

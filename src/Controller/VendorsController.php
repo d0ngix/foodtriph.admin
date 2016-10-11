@@ -20,6 +20,7 @@ class VendorsController extends AppController
      */
     public function index()
     {
+    	$this->paginate = ['conditions'=>['Vendors.deleted'=>0]];
         $vendors = $this->paginate($this->Vendors);
 
         $this->set(compact('vendors'));
@@ -124,11 +125,13 @@ class VendorsController extends AppController
      * @return \Cake\Network\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function delete($id = null)
+    public function delete($vendorUuid)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $vendor = $this->Vendors->get($id);
-        if ($this->Vendors->delete($vendor)) {
+        $vendor = $this->Vendors->find('all')->where(['Vendors.uuid'=>$vendorUuid])->first();
+        $vendor->deleted = 1;
+        
+        if ($this->Vendors->save($vendor)) {
             $this->Flash->success(__('The vendor has been deleted.'));
         } else {
             $this->Flash->error(__('The vendor could not be deleted. Please, try again.'));

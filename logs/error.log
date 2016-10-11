@@ -36174,3 +36174,240 @@ Stack Trace:
 #2 {main}
 
 
+2016-10-11 13:46:21 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory
+Request URL: /menus/edit/44/57e5fca678337
+Referer URL: http://localhost:8888/vendors/view/57e5fca678337
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', 'd0ngix777', Array)
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Connection.php(322): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Table.php(439): Cake\Database\Connection->schemaCollection()
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\VendorsTable))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Table.php(1336): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\VendorsTable))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Table.php(964): Cake\ORM\Table->query()
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Association.php(690): Cake\ORM\Table->find('all', Array)
+#13 /Applications/MAMP/htdocs/foodtriph.admin/src/Controller/MenusController.php(113): Cake\ORM\Association->find('all')
+#14 [internal function]: App\Controller\MenusController->edit('44', '57e5fca678337')
+#15 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#16 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#17 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MenusController))
+#18 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#20 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#22 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#23 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#24 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#26 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#27 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#29 {main}
+
+
+2016-10-11 13:46:34 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory
+Request URL: /vendors/view/57e5fca678337
+Referer URL: http://localhost:8888/vendors/view/57e5fca678337
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', 'd0ngix777', Array)
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Database/Connection.php(322): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Table.php(439): Cake\Database\Connection->schemaCollection()
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\VendorsTable))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Table.php(1336): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\VendorsTable))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Table.php(964): Cake\ORM\Table->query()
+#12 /Applications/MAMP/htdocs/foodtriph.admin/src/Controller/VendorsController.php(39): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\VendorsController->view('57e5fca678337')
+#14 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#16 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#17 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#27 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#28 {main}
+
+
+2016-10-11 14:15:40 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /menus/edit/44/57e5fca678337
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(971): Cake\View\View->_evaluate('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(1361): Cake\View\View->_render('/Applications/M...', Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(499): Cake\View\View->_renderElement('/Applications/M...', Array, Array)
+#3 /Applications/MAMP/htdocs/foodtriph.admin/src/Template/Menus/edit.ctp(91): Cake\View\View->element('vendor_menu_add...', Array)
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(1012): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(971): Cake\View\View->_evaluate('/Applications/M...', Array)
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(595): Cake\View\View->_render('/Applications/M...')
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MenusController))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-10-11 15:21:38 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /vendors/view/57e5fca678337
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(971): Cake\View\View->_evaluate('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(1361): Cake\View\View->_render('/Applications/M...', Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(499): Cake\View\View->_renderElement('/Applications/M...', Array, Array)
+#3 /Applications/MAMP/htdocs/foodtriph.admin/src/Template/Vendors/view.ctp(79): Cake\View\View->element('vendor_menu_add...', Array)
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(1012): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(971): Cake\View\View->_evaluate('/Applications/M...', Array)
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/View/View.php(595): Cake\View\View->_render('/Applications/M...')
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(617): Cake\View\View->render(NULL, NULL)
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-10-11 15:39:05 Warning: Headers already sent in /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Debugger.php:753
+2016-10-11 15:39:05 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /menuAddOns/add/57fd066eba0c8
+Referer URL: http://localhost:8888/vendors/view/57fd066eba0c8/refTab%3AMenus
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(121): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-10-11 15:40:44 Warning: Headers already sent in /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/basics.php:98
+2016-10-11 15:40:44 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /menuAddOns/edit/121/57fd066eba0c8
+Referer URL: http://localhost:8888/vendors/view/57fd066eba0c8/refTab%3AMenuAddOns
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(121): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-10-11 15:44:44 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "vendors"
+Request URL: /vendors/delete/57fd066eba0c8
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/ORM/Table.php(1225): Cake\ORM\Query->firstOrFail()
+#1 /Applications/MAMP/htdocs/foodtriph.admin/src/Controller/VendorsController.php(130): Cake\ORM\Table->get(Array)
+#2 [internal function]: App\Controller\VendorsController->delete('57fd066eba0c8')
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-10-11 15:48:48 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in /Applications/MAMP/htdocs/foodtriph.admin/src/Controller/VendorsController.php on line 133
+Request URL: /vendors/delete/57fd066eba0c8
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 /Applications/MAMP/htdocs/foodtriph.admin/src/Controller/VendorsController.php(133): Cake\ORM\Table->save(Object(Cake\ORM\Query))
+#1 [internal function]: App\Controller\VendorsController->delete('57fd066eba0c8')
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2016-10-11 15:50:42 Error: [Error] Call to undefined method Cake\ORM\ResultSet::where()
+Request URL: /vendors
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 [internal function]: App\Controller\VendorsController->index()
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2016-10-11 15:54:09 Error: [Error] Call to undefined method Cake\ORM\ResultSet::where()
+Request URL: /vendors
+Referer URL: http://localhost:8888/vendors
+Stack Trace:
+#0 [internal function]: App\Controller\VendorsController->index()
+#1 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#4 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/foodtriph.admin/vendor/cakephp/cakephp/src/Http/Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/foodtriph.admin/webroot/index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+

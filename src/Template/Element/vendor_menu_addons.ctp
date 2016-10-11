@@ -40,13 +40,21 @@ description
 ?>
 <?php if (!empty($arrMenuAddOns)):?>
 <?php 
-$counter = 0; 
-$intDivGrid = 6;
+$counter = 0;
+
+if (empty($intDivGrid)) $intDivGrid = 4;
+$intDivGrid = 12;
 
 //button control
 if (empty($arrAction['showEdit'])) $arrAction['showEdit'] = false;
 if (empty($arrAction['showDelete'])) $arrAction['showDelete'] = false;
 if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
+
+//get the add_on_parent_id
+$arrAddOnParentId = []; 
+if (!empty($menu['add_on_parent_id']))
+	$arrAddOnParentId = json_decode($menu['add_on_parent_id'], true)
+	
 ?>
 <?php foreach ($arrMenuAddOns as $k=>$v): $counter++; ?>
 <?php ob_start(); ?>
@@ -57,12 +65,13 @@ if (empty($arrAction['showCheckBox'])) $arrAction['showCheckBox'] = false;
            		<?php if ($arrAction['showCheckBox']):?>
            			<?php
            				$arrAddOn = [
+							'id'=> $v['id'],
            					'add_on_name'=> $v['category_name'],
 							'items' => @$v['items']
 						]; 
            				echo $this->Form->hidden('add_ons[]',['value'=>json_encode($arrAddOn)])           				
            			?>
-           				<input type="checkbox" name="menu_add_on_id[]" id="<?=$k?>" value="<?=$k?>" />
+           				<input type="checkbox" name="add_on_parent_id[]" id="<?=$k?>" value="<?=$k?>" <?=in_array($v['id'], $arrAddOnParentId) ? 'checked' : ''?>/>
            		<?php endif;?>            	
            			            	
             		<label for="<?=$k?>">

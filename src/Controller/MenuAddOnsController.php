@@ -60,7 +60,7 @@ class MenuAddOnsController extends AppController
         $menuAddOn = $this->MenuAddOns->newEntity();
         if ($this->request->is('post')) {
         	
-        	if ($this->request->data['price'])
+        	if (!empty($this->request->data['price']))
         		$this->request->data['price'] = number_format($this->request->data['price'], 2);  
         	
             $menuAddOn = $this->MenuAddOns->patchEntity($menuAddOn, $this->request->data);
@@ -100,7 +100,7 @@ class MenuAddOnsController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-        	debug($this->request->data);
+        	
             $menuAddOn = $this->MenuAddOns->patchEntity($menuAddOn, $this->request->data);
             if ($this->MenuAddOns->save($menuAddOn)) {
                 $this->Flash->success(__('The menu add on has been saved.'));

@@ -107,7 +107,9 @@
             						</div>    
 	                    			<?php endforeach;?>
 	                    			<?php else:?>
-	                    			<div><span class="text-muted">- This menu has no add-ons -</span></div>
+	                    			<div class="callout callout-warning">
+                						<p>This menu has no Add-ons</p>
+									</div>
 	                    			<?php endif;?>									
 	                  			</div>
 	                		</div>	              		
