@@ -8,3 +8,5 @@ tmp/cache/persistent
 .project
 
 .settings/org.eclipse.php.core.prefs
+
+*.log
