@@ -1,5 +1,4 @@
 <?php
-
 $this->assign('title', h($vendor->name));
 $this->assign('sub_title', h($vendor->uuid));
 

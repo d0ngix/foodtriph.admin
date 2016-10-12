@@ -36411,3 +36411,156 @@ Stack Trace:
 #15 {main}
 
 
+2016-10-12 05:02:28 Error: [PDOException] SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+Request URL: /vendors
+Stack Trace:
+#0 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=173....', 'root', 'd0ngix777', Array)
+#1 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=173....', Array)
+#2 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Database\Connection.php(322): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Table.php(439): Cake\Database\Connection->schemaCollection()
+#8 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#9 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\VendorsTable))
+#10 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Table.php(1336): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\VendorsTable))
+#11 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Table.php(964): Cake\ORM\Table->query()
+#12 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(183): Cake\ORM\Table->find('all', Array)
+#13 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Controller\Controller.php(713): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\VendorsTable), Array)
+#14 C:\wamp64\www\foodtriph.admin\src\Controller\VendorsController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\VendorsTable))
+#15 [internal function]: App\Controller\VendorsController->index()
+#16 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#17 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#18 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorsController))
+#19 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#22 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#23 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#24 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#25 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#26 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#27 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#28 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#29 C:\wamp64\www\foodtriph.admin\webroot\index.php(37): Cake\Http\Server->run()
+#30 {main}
+
+
+2016-10-12 06:20:42 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "vendor_addresses"
+Request URL: /vendor-addresses/view/57e5fca678337/40
+Referer URL: http://foodtriph.admin/vendors/view/57e5fca678337/refTab%3AMenus
+Stack Trace:
+#0 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Table.php(1225): Cake\ORM\Query->firstOrFail()
+#1 C:\wamp64\www\foodtriph.admin\src\Controller\VendorAddressesController.php(42): Cake\ORM\Table->get('57e5fca678337', Array)
+#2 [internal function]: App\Controller\VendorAddressesController->view('57e5fca678337', '40')
+#3 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#4 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#5 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorAddressesController))
+#6 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\wamp64\www\foodtriph.admin\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-10-12 06:23:03 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "vendor_addresses"
+Request URL: /vendor-addresses/view/57e5fca678337/40
+Referer URL: http://foodtriph.admin/vendors/view/57e5fca678337/refTab%3AMenus
+Stack Trace:
+#0 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Table.php(1225): Cake\ORM\Query->firstOrFail()
+#1 C:\wamp64\www\foodtriph.admin\src\Controller\VendorAddressesController.php(42): Cake\ORM\Table->get('57e5fca678337', Array)
+#2 [internal function]: App\Controller\VendorAddressesController->view('57e5fca678337', '40')
+#3 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#4 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#5 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorAddressesController))
+#6 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\wamp64\www\foodtriph.admin\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-10-12 06:23:03 Warning: Headers already sent in C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-10-12 06:23:03 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /vendor-addresses/view/57e5fca678337/40
+Referer URL: http://foodtriph.admin/vendors/view/57e5fca678337/refTab%3AMenus
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Server.php(121): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\wamp64\www\foodtriph.admin\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-10-12 06:23:19 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "vendor_addresses"
+Request URL: /vendor-addresses/view/40/57e5fca678337
+Referer URL: http://foodtriph.admin/vendors/view/57e5fca678337/refTab%3AMenus
+Stack Trace:
+#0 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\ORM\Table.php(1225): Cake\ORM\Query->firstOrFail()
+#1 C:\wamp64\www\foodtriph.admin\src\Controller\VendorAddressesController.php(42): Cake\ORM\Table->get('40', Array)
+#2 [internal function]: App\Controller\VendorAddressesController->view('40', '57e5fca678337')
+#3 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#4 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(122): Cake\Controller\Controller->invokeAction()
+#5 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VendorAddressesController))
+#6 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Server.php(92): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\wamp64\www\foodtriph.admin\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-10-12 06:23:19 Warning: Headers already sent in C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-10-12 06:23:19 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /vendor-addresses/view/40/57e5fca678337
+Referer URL: http://foodtriph.admin/vendors/view/57e5fca678337/refTab%3AMenus
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Http\Server.php(121): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\wamp64\www\foodtriph.admin\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-10-12 06:48:39 Error: Fatal Error (1): Call to undefined function App\Controller\uuid() in [C:\wamp64\www\foodtriph.admin\src\Controller\VendorAddressesController.php, line 73]
+Request URL: /vendorAddresses/add/57e5fca678337
+Referer URL: http://foodtriph.admin/vendors/view/57e5fca678337
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-10-12 06:48:39 Warning: Headers already sent in C:\wamp64\www\foodtriph.admin\src\Controller\VendorAddressesController.php:73
+2016-10-12 06:48:39 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\uuid()
+Request URL: /vendorAddresses/add/57e5fca678337
+Referer URL: http://foodtriph.admin/vendors/view/57e5fca678337
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp64\www\foodtriph.admin\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp64\\www\\f...', 73)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

@@ -73,7 +73,7 @@
 			</div>
 			<div class="box-footer">
 				<div class="pull-left">				
-                    <?= $this->Html->link(__('View'), ['controller'=>'vendor_addresses', 'action' => 'view', $vendorAddresses->id],['class'=>'label label-info']) ?>
+                    <?= $this->Html->link(__('View'), ['controller'=>'vendor_addresses', 'action' => 'view', $vendorAddresses->id, $vendor->uuid],['class'=>'label label-info']) ?>
                     <?= $this->Html->link(__('Edit'), '#',['class'=>'label label-warning btnEditVendorAddress', 'data-toggle'=>"modal", 'data-target'=>"#modalEditBranch", 'id'=>"btnEditBranch",'vendor-uuid'=>$vendor->uuid,'branch-id'=>$vendorAddresses->id] ) ?> 
                     <?= $this->Form->postLink(__('Delete'), ['controller'=>'vendorAddresses', 'action' => 'delete', $vendorAddresses->id, $vendor->uuid], ['class'=>'label label-danger','confirm' => __("Are you sure you want to delete $vendorAddresses->address_name?")]) ?>
 				</div>                   

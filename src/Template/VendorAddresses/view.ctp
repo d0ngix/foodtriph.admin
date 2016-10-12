@@ -1,3 +1,23 @@
+<?php 
+$this->assign('title', h($vendorAddress->vendor->name));
+$this->assign('sub_title', h($vendorAddress->vendor->uuid));
+?>
+<div class="row">
+	<section class="content">
+		<div class="row">
+		
+        	<div class="col-md-3">
+				<?= $this->element('vendor_address_profile');?>
+	        </div>
+        
+			<div class="col-md-9">
+			</div>
+			
+		</div>
+	</section>
+</div>
+
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>

@@ -35,12 +35,13 @@ class VendorAddressesController extends AppController
      * @return \Cake\Network\Response|null
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
+    public function view($id, $vendorUuid)
     {
+    	//debug($vendorUuid);die;
         $vendorAddress = $this->VendorAddresses->get($id, [
-            'contain' => ['Vendors']
+            'contain' => ['Vendors' => function ($q) use ($vendorUuid)  { return $q->where(['Vendors.uuid'=>$vendorUuid]); }]
         ]);
-
+        
         $this->set('vendorAddress', $vendorAddress);
         $this->set('_serialize', ['vendorAddress']);
     }
@@ -68,6 +69,8 @@ class VendorAddressesController extends AppController
             $vendorAddress = $this->VendorAddresses->patchEntity($vendorAddress, $this->request->data);
             
             $this->getLatLang($vendorAddress);
+            
+            $vendorAddress->uuid = uniqid();
             
             if ($this->VendorAddresses->save($vendorAddress)) {
                 $this->Flash->success(__('The vendor address has been saved.'));
