@@ -21,6 +21,20 @@
                 		</div>
                 		
 						<div class="form-group">                	
+							<label for="inputPhone" class="col-sm-3 control-label">Contact Number</label>					
+							<div class="col-sm-9">
+	                    		<?=  $this->Form->input('phone',array('label'=>false,'class'=>"form-control",'id'=>'inputPhone','required'=>true));?>	                    		
+	                  		</div>
+                		</div>   
+                		
+						<div class="form-group">                	
+							<label for="inputEmail" class="col-sm-3 control-label">Email</label>					
+							<div class="col-sm-9">
+	                    		<?=  $this->Form->input('phone',array('type'=>'phone', 'label'=>false,'class'=>"form-control",'id'=>'inputEmail','required'=>false));?>	                    		
+	                  		</div>
+                		</div>                		
+                		
+						<div class="form-group">                	
 							<label for="inputAddress1" class="col-sm-3 control-label">Unit #</label>					
 							<div class="col-sm-9">
 	                    		<?= $this->Form->input('address1', ['label'=>false,'type'=>'text','class'=>'form-control']);?>
