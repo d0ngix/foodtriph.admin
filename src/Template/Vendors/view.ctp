@@ -23,11 +23,10 @@ if (empty($refTab)) $refTab = 'VendorAddresses';
 					<div class="row">
 						<div class="col-md-12">
 							<div class="box box-primary">
-		        	    		<div class="box-body with-border">
-									<?= $this->element('orders_new') ?>
-									<?= $this->element('orders_pending') ?>
-									<?= $this->element('orders_completed') ?>
-									<?= $this->element('orders_total') ?>	            		
+		        	    		<div class="box-body with-border">   
+									<?= $this->element('orders_widget', ['gridCol'=>4,'title' => "New Orders", 'count' => null, 'bgColor' => 'aqua']) ?>
+									<?= $this->element('orders_widget', ['gridCol'=>4,'title' => "Pending Orders", 'count' => null, 'bgColor' => 'red']) ?>
+									<?= $this->element('orders_widget', ['gridCol'=>4,'title' => "Completed Orders", 'count' => null, 'bgColor' => 'green']) ?>
 			            		</div>
 			            	</div>									
 						</div>	
