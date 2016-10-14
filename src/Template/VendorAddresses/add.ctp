@@ -30,7 +30,7 @@
 						<div class="form-group">                	
 							<label for="inputEmail" class="col-sm-3 control-label">Email</label>					
 							<div class="col-sm-9">
-	                    		<?=  $this->Form->input('phone',array('type'=>'phone', 'label'=>false,'class'=>"form-control",'id'=>'inputEmail','required'=>false));?>	                    		
+	                    		<?=  $this->Form->input('email',array('type'=>'phone', 'label'=>false,'class'=>"form-control",'id'=>'inputEmail','required'=>false));?>	                    		
 	                  		</div>
                 		</div>                		
                 		

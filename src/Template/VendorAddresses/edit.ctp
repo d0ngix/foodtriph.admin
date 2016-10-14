@@ -1,4 +1,3 @@
-<?php debug($vendorAddress);?>
 <div class="row">
 	<div class="col-md-12">
 		<div class="box box-info">
@@ -31,7 +30,7 @@
 						<div class="form-group">                	
 							<label for="inputEmail" class="col-sm-3 control-label">Email</label>					
 							<div class="col-sm-9">
-	                    		<?=  $this->Form->input('email',array('type'=>'email', 'label'=>false,'class'=>"form-control",'id'=>'inputEmail','required'=>false));?>	                    		
+	                    		<?=  $this->Form->input('email',array('type'=>'email', 'label'=>false,'class'=>"form-control",'id'=>'inputEmail','required'=>true));?>	                    		
 	                  		</div>
                 		</div>                     		             		
                 		
@@ -98,8 +97,8 @@
 						<div class="form-group">                	
 							<label for="inputCountry" class="col-sm-3 control-label">Operating Hours</label>					
 							<div class="col-sm-9">
-							
-								<?=$this->element('vendor_operation');?>
+								<?php $arrOperatingHours = json_decode($vendorAddress->operating_hours, true);?>
+								<?=$this->element('vendor_operation', compact('arrOperatingHours'));?>
 	
 	                  		</div>
                 		</div>                		                		

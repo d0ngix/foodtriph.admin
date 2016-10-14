@@ -3,12 +3,6 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
-        </li>
-        
-        <li class="active treeview">
-          <a href="#">
             <i class="fa fa-dashboard"></i> <span>Vendors</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

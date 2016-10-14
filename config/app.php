@@ -229,7 +229,7 @@ return [
              * the following line and set the port accordingly
              */
             'port' => 'non_standard_port_number',
-           'host' => 'localhost',
+			'host' => 'localhost',
             'username' => 'root',
             'password' => 'd0ngix777',
             'database' => 'foodtriph',

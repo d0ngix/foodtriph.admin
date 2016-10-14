@@ -10,8 +10,15 @@
 	{"sun":{"start":"10:00 AM","end":"10:00 PM"}}
 ]
 */
-?>    
-<?php 
+//Setup default time for start/end on each day if NO defined time 
+if (empty($arrOperatingHours)) {
+	for ( $x = 1; $x <= 7; $x++ ) 
+		$arrOperatingHours[] = [ strtolower(date("D",mktime(0,0,0,3,28,2009)+$x * (3600*24))) => ["start"=>"10:00 AM","end"=>"10:00 PM"] ];  
+}
+
+//setup the start/end time for each day
+foreach ( $arrOperatingHours as $v ) extract($v);
+
 $arrOperation = [
 	['label'=>'Monday','alias'=>'mon'],
 	['label'=>'Tuesday','alias'=>'tue'],
@@ -40,7 +47,7 @@ $counter = 0;
 						<div class="bootstrap-timepicker">
 							<div class="form-group">
 								<div class="input-group">
-									<input type="text" class="form-control timepicker" name="op[<?=$value['alias']?>][start]">
+									<input type="text" class="form-control timepicker" name="op[<?=$value['alias']?>][start]" value="<?=${$value['alias']}['start'] ?>">
 									<div class="input-group-addon">
 			                      		<i class="fa fa-clock-o"></i>
 			                    	</div>
@@ -55,7 +62,7 @@ $counter = 0;
 						<div class="bootstrap-timepicker">
 							<div class="form-group">
 								<div class="input-group">
-									<input type="text" class="form-control timepicker" name="op[<?=$value['alias']?>][end]">
+									<input type="text" class="form-control timepicker" name="op[<?=$value['alias']?>][end]" value="<?=${$value['alias']}['end'] ?>">
 									<div class="input-group-addon">
 			                      		<i class="fa fa-clock-o"></i>
 			                    	</div>

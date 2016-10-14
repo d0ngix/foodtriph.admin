@@ -11,7 +11,68 @@ $this->assign('sub_title', h($vendorAddress->vendor->uuid));
 	        </div>
         
 			<div class="col-md-9">
-			</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="box box-primary">
+		        	    		<div class="box-body with-border">
+									<?= $this->element('orders_widget', ['gridCol'=>6,'title' => "New Orders", 'count' => 123, 'bgColor' => 'aqua']) ?>
+									<?= $this->element('orders_widget', ['gridCol'=>6,'title' => "Completed Orders as of " . date('d M Y D'), 'count' => 123, 'bgColor' => 'green']) ?>	            		
+			            		</div>
+			            	</div>									
+						</div>	
+					</div>
+
+					<div class="row">
+					
+						<div class="col-md-12">
+							<div class="nav-tabs-custom">
+            					<ul class="nav nav-tabs">
+              						<li class="active"><a href="#VendorAddresses" data-toggle="tab" aria-expanded="true">New Orders</a></li>
+              						<li class=""><a href="#Menus" data-toggle="tab" aria-expanded="false">Pending Orders</a></li>
+              						<li class=""><a href="#MenuAddOns" data-toggle="tab" aria-expanded="false">Completed Orders</a></li>
+            					</ul>
+            					<div class="tab-content">
+              						<div class="tab-pane <?=($refTab === 'VendorAddresses') ? 'active' : '';?>" id="VendorAddresses">
+              							<div class="row">
+              								<div class="pull-right">
+												<button type="button" class="btn bg-olive margin btnNewBranch" data-toggle="modal" data-target="#modalNewBranch" vendor-uuid=<?=$vendor->uuid?>>
+										      		<strong>New Branch</strong>
+										      	</button>              									
+              								</div>
+              							</div>              							
+										<?= $this->element('orders_new_list') ?>
+                					</div>
+              
+              						<div class="tab-pane <?=($refTab === 'Menus') ? 'active' : '';?>" id="Menus">
+              							<div class="row">
+              								<div class="pull-right">              								
+												<button type="button" class="btn bg-olive margin btnNewMenu" data-toggle="modal" data-target="#modalNewMenu" id="" vendor-uuid="<?=$vendor->uuid?>">
+										      		<strong>Add Menu</strong>
+										      	</button>              								
+              								</div>
+              							</div>              							
+										<?= $this->element('vendor_menus') ?>
+									</div>
+									
+              						<div class="tab-pane <?=($refTab === 'MenuAddOns') ? 'active' : '';?>" id="MenuAddOns">
+              							<div class="row">
+              								<div class="pull-right">
+												<button type="button" class="btn bg-olive margin btnNewMenuAddOn" data-toggle="modal" data-target="#modalNewMenuAddOn" vendor-uuid="<?=$vendor->uuid?>">
+										      		<strong>Add Menu Add-ons</strong>
+										      	</button>              									
+              								</div>
+              							</div>              							
+              							<?php $arrAction = ['showEdit'=>true, 'showDelete'=>true, 'showCheckBox'=>false];?>
+										<?= $this->element('vendor_menu_addons',compact('arrMenuAddOns','arrAction')) ?>
+									</div>
+				
+            					</div>
+          					</div>						
+						
+						</div>
+					</div>
+				       
+	        	</div>	  
 			
 		</div>
 	</section>
