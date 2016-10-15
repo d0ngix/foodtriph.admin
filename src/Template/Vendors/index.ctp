@@ -92,7 +92,7 @@
 
 <?= $this->element('modals',  ['id'=>'modalEditVendor','modalTitle'=>'Edit Vendor'])?>
 <?= $this->element('modals',  ['id'=>'modalEditVendorPhoto','modalTitle'=>'Update Photo'])?>
-
+<!-- 
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -123,3 +123,4 @@
         <p><?= $this->Paginator->counter() ?></p>
     </div>
 </div>
+ -->

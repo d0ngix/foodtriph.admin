@@ -1,4 +1,6 @@
 <?php 
+use Cake\Utility\Hash;
+
 /*
 [
 	{"mon":{"start":"10:00 AM","end":"10:00 PM"}},
@@ -29,6 +31,16 @@ $arrOperation = [
 	['label'=>'Sunday','alias'=>'sun'],
 ];
 $counter = 0;
+?>
+<?php
+$arrDays =  (array)json_decode($vendorAddress->operating_hours,true);
+$arrDays = Hash::combine($arrDays, '{n}', '{n}.{s}');
+debug($arrDays );
+// foreach (json_decode($vendorAddress->operating_hours,true) as $v ) {
+// 	$arrDays[]
+// }
+	debug(json_decode($vendorAddress->operating_hours));
+	
 ?>
 <?php foreach ($arrOperation as $value):$counter++;?>
 <?php ob_start(); ?>
@@ -85,4 +97,4 @@ $counter = 0;
 
 ?>	
 <?php endforeach;echo '</div>';?>
-<script type="text/javascript">$(".timepicker").timepicker({showInputs: false});</script>
+<script type="text/javascript">$(".timepicker").timepicker({showInputs: false,time: 10:30 pm});</script>
