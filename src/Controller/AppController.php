@@ -49,7 +49,34 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-        
+        $this->loadComponent('Auth', [
+        	'loginAction' => [
+        		'controller' => 'VendorUsers',
+        		'action' => 'login'
+        	],       
+            'loginRedirect' => [
+                'controller' => 'Vendors',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'VendorUsers',
+                'action' => 'login',
+                'home'
+            ],
+        	'authError' => 'Unauthorized Access',
+        	'authenticate' => [
+        		'Form' => [
+        			'fields' => [
+        				'username' => 'email',
+        				'password' => 'password'
+        				],
+        			'userModel'=>'VendorUsers'
+        		]
+        	],    
+        	'storage' => 'Session',
+        	
+        ]);
+
         //Configs
         $this->set('arrFoodType', Configure::read('FoodType'));
         $this->set('env', Configure::read('env'));
@@ -71,6 +98,11 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
     }
+    
+    public function beforeFilter(Event $event)
+    {
+    	//$this->Auth->allow(['index', 'view', 'display']);
+    }    
     
     public function uploadImg($arrOption = []) {
     	
