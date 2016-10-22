@@ -1,6 +1,8 @@
 <?php
 namespace App\Controller;
 
+use Cake\Event\Event;
+
 use App\Controller\AppController;
 
 /**
@@ -10,15 +12,20 @@ use App\Controller\AppController;
 class VendorUsersController extends AppController
 {
 
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        $this->Auth->allow('add');
+    }
+	
 	function login(){
 
 		$vendorUser = $this->VendorUsers->newEntity();
 		
 	    if ($this->request->is('post')) {
-	    	
-	    	//debug($this->request->data);die;
+
 	    	$user = $this->Auth->identify();
-	    	debug($user);die;
+
 			if ($user) {
 				
 	    		$this->Auth->setUser($user);
@@ -77,8 +84,18 @@ class VendorUsersController extends AppController
     {
         $vendorUser = $this->VendorUsers->newEntity();
         if ($this->request->is('post')) {
+
+        	if($this->request->data['photo']['size']) {
+        		//img upload setup
+        		$strFilename = $this->request->data['vendor_uuid'] . '_' . preg_replace('/\s+/', '_', $this->request->data['first_name'] . '_' . $this->request->data['last_name']);
+        		$arrImg = $this->uploadImg(['filename'=>$strFilename]);
+        		if ($arrImg) $this->request->data['photo'] = json_encode($arrImg);
+        	}        	
+        	
             $vendorUser = $this->VendorUsers->patchEntity($vendorUser, $this->request->data);
+
             if ($this->VendorUsers->save($vendorUser)) {
+            	
                 $this->Flash->success(__('The vendor user has been saved.'));
 
                 return $this->redirect(['action' => 'index']);

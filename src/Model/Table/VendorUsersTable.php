@@ -55,29 +55,17 @@ use Cake\Validation\Validator;
         $validator
             ->requirePresence('password', 'create')            ->notEmpty('password');
         $validator
-            ->requirePresence('hash', 'create')            ->notEmpty('hash');
-        $validator
             ->allowEmpty('first_name');
         $validator
             ->allowEmpty('last_name');
         $validator
             ->allowEmpty('gender');
         $validator
-            ->date('birth_date')            ->allowEmpty('birth_date');
-        $validator
             ->allowEmpty('mobile');
         $validator
             ->allowEmpty('photo');
         $validator
-            ->allowEmpty('social_media');
-        $validator
-            ->requirePresence('device_details', 'create')            ->notEmpty('device_details');
-        $validator
-            ->allowEmpty('verified');
-        $validator
             ->allowEmpty('active');
-        $validator
-            ->allowEmpty('verification_details');
         
         $validator
 	        ->notEmpty('email', 'A username is required')
