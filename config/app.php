@@ -234,26 +234,14 @@ return [
             'flags' => [],
             'cacheMetadata' => true,
             'log' => false,
-
-			//Local Machine
-// 			'host' => 'localhost',
-// 			'username' => 'root',
-// 			'password' => 'd0ngix777',
-// 			'database' => 'foodtriph',
             
-            //HEROKU SERVER
-//             'username' => 'b7bed7fbfec968',
-//             'password' => '79de4384',
-//             'host' => 'us-cdbr-iron-east-04.cleardb.net',
-//             'database' => 'heroku_9d2a1cfa6f2cfa2', 
 
-            //CLOUD-SQL-173.194.80.224
-			'username' => 'root',
-			'password' => 'd0ngix777',
-			'host' => '173.194.80.224',
-			'database' => 'foodtriph',
-            
-            /**
+                        'username' => $_ENV['MYSQL_USER'],
+                        'password' => $_ENV['MYSQL_PWD'],
+                        'host' => $_ENV['MYSQL_HOST'],
+                        'database' => $_ENV['MYSQL_DB'],
+
+	    /**
              * Set identifier quoting to true if you are using reserved words or
              * special characters in your table or column names. Enabling this
              * setting will result in queries built using the Query Builder having
