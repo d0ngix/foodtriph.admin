@@ -29,6 +29,9 @@ class VendorUsersController extends AppController
 			if ($user) {
 				
 	    		$this->Auth->setUser($user);
+	    		
+	    		if ($user['role'] === 'sa')
+	    			return $this->redirect(['controller'=>'vendors','action'=>'index']);
             	
 	    		return $this->redirect($this->Auth->redirectUrl());
 	    		
@@ -43,6 +46,11 @@ class VendorUsersController extends AppController
 	    $this->set('_serialize', ['vendorUser']);	    
 	    
 		$this->render('login','login');
+	}	
+	
+	public function logout()
+	{
+		return $this->redirect($this->Auth->logout());
 	}	
 	
     /**

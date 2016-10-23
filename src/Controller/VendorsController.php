@@ -13,6 +13,23 @@ use App\Controller\AppController;
 class VendorsController extends AppController
 {
 
+	public function isAuthorized($user) {
+		
+		//only allow vendor users (u, su) to view except for admin users (a, sa)
+		if ( in_array($this->request->action, ['view']) && ( 'u' === $user['role'] || 'su' === $user['role'] ) ) {
+			
+			//check if user belongs to the vendor
+			debug($this->request->params['pass'][0]);die;
+			
+		}
+		
+		//only allow user belongs to this vendor
+		//debug($user['role']);die;
+		
+		
+		return parent::isAuthorized($user);
+	}
+	
     /**
      * Index method
      *

@@ -50,6 +50,7 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
+        	'authorize' => ['Controller'],
         	'loginAction' => [
         		'controller' => 'VendorUsers',
         		'action' => 'login'
@@ -84,6 +85,15 @@ class AppController extends Controller
         $this->set('defaultCurrencySymbol', Configure::read('defaultCurrencySymbol'));
     }
 
+    public function isAuthorized ($user) {
+    	
+    	//Super Admin (sa) users can access all
+    	if ( isset($user['role']) && $user['role'] === 'sa' ) return true;
+    	
+    }
+    
+    
+    
     /**
      * Before render callback.
      *
