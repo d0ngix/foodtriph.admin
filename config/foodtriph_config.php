@@ -18,4 +18,14 @@ return [
 	
 	//curreny symbol
 	'defaultCurrencySymbol' => 'PHP',
+	
+	//Transaction status
+	'TransacStatus' => [
+		0 => 'Cancelled',
+		1 => 'Pending - Awaiting Acknowledgement',
+		2 => 'Accepted - Awaiting Payment',
+		3 => 'Paid',
+		4 => 'Preparing',
+		5 => 'Delivered - Order Completed',
+	],	
 ];

@@ -42,7 +42,10 @@ class VendorAddressesController extends AppController
             'contain' => ['Vendors' => function ($q) use ($vendorUuid)  { return $q->where(['Vendors.uuid'=>$vendorUuid]); }]
         ]);
         
+        $arrTransactions = $this->getBranchOrders($vendorAddress->id);
+        
         $this->set('vendorAddress', $vendorAddress);
+        $this->set('arrTransactions', $arrTransactions);
         $this->set('_serialize', ['vendorAddress']);
     }
 

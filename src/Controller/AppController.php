@@ -15,11 +15,8 @@
 namespace App\Controller;
 
 use Cake\ORM\TableRegistry;
-
 use Cake\Utility\Inflector;
-
 use Cake\Core\Configure;
-
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 
@@ -80,6 +77,7 @@ class AppController extends Controller
 
         //Configs
         $this->set('arrFoodType', Configure::read('FoodType'));
+        $this->set('arrTransacStatus', Configure::read('TransacStatus'));
         $this->set('env', Configure::read('env'));
         $this->set('default_img', Configure::read('default_img'));
         $this->set('defaultCurrencySymbol', Configure::read('defaultCurrencySymbol'));
@@ -113,7 +111,13 @@ class AppController extends Controller
     {
     	//$this->Auth->allow(['index', 'view', 'display']);
     }    
-    
+
+    /**
+     * @method uploadImg - upload image
+     * @param array $arrOption
+     * - $arrOption['filename']
+     * @return multitype:string NULL |boolean
+     */
     public function uploadImg($arrOption = []) {
     	
     	$imgPath = Configure::read('App.imageBaseUrl') . Inflector::underscore($this->name);
@@ -124,8 +128,6 @@ class AppController extends Controller
     	// Optionally you can rename the file on upload
     	if ($arrOption['filename']) 
     		$file->setName($arrOption['filename']);
-    	
-
     	
     	// Validate file upload
     	// MimeType List => http://www.iana.org/assignments/media-types/media-types.xhtml
@@ -161,6 +163,11 @@ class AppController extends Controller
     	
     }
 
+    /**
+     * @method getMenuAddOns - retrieve all the menu add-ons of the vendor
+     * @param int vendor_id
+     * @return multitype:array | boolean
+     */
 	public function getMenuAddOns ($vendorId) {
 		$arrMenuAddOns = null;
 		$menuAddOns = TableRegistry::get('MenuAddOns');
@@ -186,6 +193,11 @@ class AppController extends Controller
 		return false;
 	}
 	
+	/**
+	 * @method getLatLang - get the latitude and longitude of the given address
+	 * @param object $vendorAddress
+	 * @return object
+	 */	
 	public function getLatLang (&$vendorAddress) {
 		//Get lat/long
 		//https://maps.googleapis.com/maps/api/geocode/json?address=122E%20Rivervale%20Drive,%20Sengkang%20Singapore
@@ -201,4 +213,33 @@ class AppController extends Controller
 	
 		return $vendorAddress;
 	}	
+
+	/**
+	 * @method getBranchOrders - retrieve all orders from a branch (VendorAddresses)
+	 * @params int $branchId
+	 * @return object	
+	 */
+	public function getBranchOrders ($branchId) {
+		
+		$objTransactions = TableRegistry::get('Transactions');
+		$objTransactions = $objTransactions->find('all',['contain' => ['TransactionItems','Users']])
+											->where(['address_id' => 1])
+											//->where(['address_id' => $branchId])
+											->order(['Transactions.created DESC'])
+											->all();
+		if ($objTransactions->count()) {
+			// group new order / pending / completed
+			$arrOrders = [];
+			foreach ( $objTransactions->toArray() as $transac ) {
+		
+				$arrOrders[$transac->status][] = $transac;
+		
+			}
+			
+			return $arrOrders;
+		} 
+		
+		return false;
+	}
+
 }

@@ -1,6 +1,11 @@
 <?php 
 $this->assign('title', h($vendorAddress->vendor->name));
 $this->assign('sub_title', h($vendorAddress->vendor->uuid));
+$arrOrdersNew = !empty($arrTransactions[1]) ? $arrTransactions[1] : null;
+$arrOrdersAccepted = !empty($arrTransactions[2]) ? $arrTransactions[2] : null;
+$arrOrdersPaid = !empty($arrTransactions[3]) ? $arrTransactions[3] : null;
+$arrOrdersPreparing = !empty($arrTransactions[4]) ? $arrTransactions[4] : null;
+$arrOrdersCompleted = !empty($arrTransactions[5]) ? $arrTransactions[5] : null;
 ?>
 <div class="row">
 	<section class="content">
@@ -27,43 +32,21 @@ $this->assign('sub_title', h($vendorAddress->vendor->uuid));
 						<div class="col-md-12">
 							<div class="nav-tabs-custom">
             					<ul class="nav nav-tabs">
-              						<li class="active"><a href="#VendorAddresses" data-toggle="tab" aria-expanded="true">New Orders</a></li>
-              						<li class=""><a href="#Menus" data-toggle="tab" aria-expanded="false">Pending Orders</a></li>
-              						<li class=""><a href="#MenuAddOns" data-toggle="tab" aria-expanded="false">Completed Orders</a></li>
+              						<li class="active"><a href="#NewOrders" data-toggle="tab" aria-expanded="true">New Orders</a></li>
+              						<li class=""><a href="#PendingOrders" data-toggle="tab" aria-expanded="false">Pending Orders</a></li>
+              						<li class=""><a href="#CompletedOrders" data-toggle="tab" aria-expanded="false">Completed Orders</a></li>
             					</ul>
             					<div class="tab-content">
-              						<div class="tab-pane <?=($refTab === 'VendorAddresses') ? 'active' : '';?>" id="VendorAddresses">
-              							<div class="row">
-              								<div class="pull-right">
-												<button type="button" class="btn bg-olive margin btnNewBranch" data-toggle="modal" data-target="#modalNewBranch" vendor-uuid=<?=$vendor->uuid?>>
-										      		<strong>New Branch</strong>
-										      	</button>              									
-              								</div>
-              							</div>              							
-										<?= $this->element('orders_new_list') ?>
+              						<div class="tab-pane active" id="NewOrders">              							
+										<?= $this->element('orders_list', ['arrOrders'=>$arrOrdersNew, 'title'=>'New Orders', 'tableId'=>'tblOrdersNew' ]) ?>
                 					</div>
               
-              						<div class="tab-pane <?=($refTab === 'Menus') ? 'active' : '';?>" id="Menus">
-              							<div class="row">
-              								<div class="pull-right">              								
-												<button type="button" class="btn bg-olive margin btnNewMenu" data-toggle="modal" data-target="#modalNewMenu" id="" vendor-uuid="<?=$vendor->uuid?>">
-										      		<strong>Add Menu</strong>
-										      	</button>              								
-              								</div>
-              							</div>              							
-										<?= $this->element('vendor_menus') ?>
+              						<div class="tab-pane" id="PendingOrders">              							
+										<?= $this->element('orders_list', ['arrOrders' => $arrOrdersAccepted, 'title'=>'Pending Orders', 'tableId'=>'tblOrdersPending']) ?>
 									</div>
 									
-              						<div class="tab-pane <?=($refTab === 'MenuAddOns') ? 'active' : '';?>" id="MenuAddOns">
-              							<div class="row">
-              								<div class="pull-right">
-												<button type="button" class="btn bg-olive margin btnNewMenuAddOn" data-toggle="modal" data-target="#modalNewMenuAddOn" vendor-uuid="<?=$vendor->uuid?>">
-										      		<strong>Add Menu Add-ons</strong>
-										      	</button>              									
-              								</div>
-              							</div>              							
-              							<?php $arrAction = ['showEdit'=>true, 'showDelete'=>true, 'showCheckBox'=>false];?>
-										<?= $this->element('vendor_menu_addons',compact('arrMenuAddOns','arrAction')) ?>
+              						<div class="tab-pane" id="CompletedOrders">
+										<?= $this->element('orders_list', ['arrOrders'=>$arrOrdersCompleted, 'title'=>'Completed Orders', 'tableId'=>'tblOrdersCompleted']) ?>
 									</div>
 				
             					</div>

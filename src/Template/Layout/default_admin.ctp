@@ -43,6 +43,9 @@
   <!-- bootstrap timepicker -->
   <?= $this->Html->css('/vendor/AdminLTE-2.3.6/plugins/timepicker/bootstrap-timepicker.min')?>  
 
+  <!-- DataTables -->
+  <?= $this->Html->css('/vendor/AdminLTE-2.3.6/plugins/datatables/dataTables.bootstrap')?>
+  
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -193,6 +196,11 @@ function myMap() {
   $('select').select2();
 </script>
  -->
+
+<!-- DataTables -->
+<?= $this->Html->script('/vendor/AdminLTE-2.3.6/plugins/datatables/jquery.dataTables.min') ?>
+<?= $this->Html->script('/vendor/AdminLTE-2.3.6/plugins/datatables/dataTables.bootstrap.min') ?>
+ 
  
 <!-- FoodTriPH JS -->
 <?= $this->Html->script('/js/foodtriph') ?>
