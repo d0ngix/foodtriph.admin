@@ -51,7 +51,7 @@ if (empty($refTab)) $refTab = 'VendorAddresses';
 										      	</button>              									
               								</div>
               							</div>              							
-										<?= $this->element('vendor_addresses') ?>
+										<?= $this->element('vendor_addresses', ['arrVendorAddresses' => $vendor->vendor_addresses]) ?>
                 					</div>
               
               						<div class="tab-pane <?=($refTab === 'Menus') ? 'active' : '';?>" id="Menus">
@@ -62,7 +62,7 @@ if (empty($refTab)) $refTab = 'VendorAddresses';
 										      	</button>              								
               								</div>
               							</div>              							
-										<?= $this->element('vendor_menus') ?>
+										<?= $this->element('vendor_menus', ['arrVendorMenus' => $vendor->menus]) ?>
 									</div>
 									
               						<div class="tab-pane <?=($refTab === 'MenuAddOns') ? 'active' : '';?>" id="MenuAddOns">

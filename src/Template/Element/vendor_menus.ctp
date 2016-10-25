@@ -1,5 +1,5 @@
-<?php if (!empty($vendor->menus)): $counter = 0; $intDivGrid = 6;?>
-<?php foreach ($vendor->menus as $menus): $counter++; ?>
+<?php if (!empty($arrVendorMenus)): $counter = 0; $intDivGrid = 6;?>
+<?php foreach ($arrVendorMenus as $menus): $counter++; ?>
 <?php ob_start(); ?>
 	<div class="col-md-<?=$intDivGrid?>">
 		<div class="box box-primary">

@@ -219,12 +219,12 @@ class AppController extends Controller
 	 * @params int $branchId
 	 * @return object	
 	 */
-	public function getBranchOrders ($branchId) {
+	public function getBranchOrders ($branchUuid) {
 		
 		$objTransactions = TableRegistry::get('Transactions');
 		$objTransactions = $objTransactions->find('all',['contain' => ['TransactionItems','Users']])
-											->where(['address_id' => 1])
-											//->where(['address_id' => $branchId])
+											//->where(['address_id' => 1])
+											->where(['address_uuid' => $branchUuid])
 											->order(['Transactions.created DESC'])
 											->all();
 		if ($objTransactions->count()) {

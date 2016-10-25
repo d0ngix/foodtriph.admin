@@ -1,5 +1,5 @@
-<?php if(!empty($vendor->vendor_addresses)): $counter=0;?>
-<?php foreach ($vendor->vendor_addresses as $vendorAddresses): $counter++; ?>
+<?php if(!empty($arrVendorAddresses)): $counter=0;?>
+<?php foreach ($arrVendorAddresses as $vendorAddresses): $counter++; ?>
 <?php if($vendorAddresses->deleted) continue;?>
 
 <div class="row">

@@ -39,10 +39,12 @@ class VendorAddressesController extends AppController
     {
     	//debug($vendorUuid);die;
         $vendorAddress = $this->VendorAddresses->get($id, [
-            'contain' => ['Vendors' => function ($q) use ($vendorUuid)  { return $q->where(['Vendors.uuid'=>$vendorUuid]); }]
+            'contain' => [
+        		'Vendors' => function ($q) use ($vendorUuid)  { return $q->where(['Vendors.uuid'=>$vendorUuid]); }
+			]
         ]);
         
-        $arrTransactions = $this->getBranchOrders($vendorAddress->id);
+        $arrTransactions = $this->getBranchOrders($vendorAddress->uuid);
         
         $this->set('vendorAddress', $vendorAddress);
         $this->set('arrTransactions', $arrTransactions);
