@@ -19,6 +19,7 @@ use Cake\Utility\Inflector;
 use Cake\Core\Configure;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\Utility\Hash;
 
 /**
  * Application Controller
@@ -227,15 +228,26 @@ class AppController extends Controller
 											->where(['address_uuid' => $branchUuid])
 											->order(['Transactions.created DESC'])
 											->all();
+		
 		if ($objTransactions->count()) {
 			// group new order / pending / completed
 			$arrOrders = [];
 			foreach ( $objTransactions->toArray() as $transac ) {
-		
+				
+				foreach ($transac->transaction_items as $item) {
+					//get the related menu
+					$objMenus = TableRegistry::get('Menus');
+					$arrMenuPhoto = json_decode($objMenus->get($item->menu_id,['fields'=>['photo'] ] )->photo, true);
+					$item->photo = DS . $arrMenuPhoto['path'] . DS . $arrMenuPhoto['name']; 
+					
+					$item->add_ons = json_decode($item->add_ons, true);
+					
+					$newItem[] = $item;
+				}			
+				$transac->transaction_items = $newItem;					
+
 				$arrOrders[$transac->status][] = $transac;
-		
 			}
-			
 			return $arrOrders;
 		} 
 		
