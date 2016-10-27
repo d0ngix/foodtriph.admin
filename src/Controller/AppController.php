@@ -228,12 +228,12 @@ class AppController extends Controller
 											->where(['address_uuid' => $branchUuid])
 											->order(['Transactions.created DESC'])
 											->all();
-		
+		//debug($objTransactions);die;
 		if ($objTransactions->count()) {
 			// group new order / pending / completed
 			$arrOrders = [];
 			foreach ( $objTransactions->toArray() as $transac ) {
-				
+				$newItem = null;
 				foreach ($transac->transaction_items as $item) {
 					//get the related menu
 					$objMenus = TableRegistry::get('Menus');
@@ -248,6 +248,7 @@ class AppController extends Controller
 
 				$arrOrders[$transac->status][] = $transac;
 			}
+			
 			return $arrOrders;
 		} 
 		
