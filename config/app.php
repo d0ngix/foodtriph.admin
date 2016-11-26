@@ -236,10 +236,10 @@ return [
             'log' => false,
             
 
-                        'username' => $_SERVER['MYSQL_USER'],
-                        'password' => $_SERVER['MYSQL_PWD'],
-                        'host' => $_SERVER['MYSQL_HOST'],
-                        'database' => $_SERVER['MYSQL_DB'],
+                        'username' => $_ENV['MYSQL_USER'],
+                        'password' => $_ENV['MYSQL_PWD'],
+                        'host' => $_ENV['MYSQL_HOST'],
+                        'database' => $_ENV['MYSQL_DB'],
 
 	    /**
              * Set identifier quoting to true if you are using reserved words or

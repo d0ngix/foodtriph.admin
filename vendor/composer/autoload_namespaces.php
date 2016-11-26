@@ -11,6 +11,8 @@ return array(
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
+    'Buzz' => array($vendorDir . '/kriswallsmith/buzz/lib'),
     'Aura\\Intl' => array($vendorDir . '/aura/intl/src'),
     'Aura\\Composer\\' => array($vendorDir . '/aura/installer-default/src'),
+    'Assert' => array($vendorDir . '/beberlei/assert/lib'),
 );
